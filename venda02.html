@@ -3906,7 +3906,7 @@ R$ 120,00 </b>
 </ul>
 <div class="text-center">
 <a href="#" class="prolancer-btn" data-bs-toggle="modal" data-bs-target="#message60">
-Contatar Vendedor </a>
+Denunciar </a>
 </div>
 <div class="mt-5 text-center">
 <h4 class="mb-3">Habilidades</h4>
@@ -3917,20 +3917,45 @@ Contatar Vendedor </a>
 </div>
 </div>
 </div>
-
 <div class="modal fade" id="message60" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title" id="staticBackdropLabel">Send Message to Seller</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Denunciar Carlos Alfredo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Descreva com o máximo de informações possíveis para que possamos avaliar a situação.</p>
+        <textarea id="denuncia-textarea"></textarea>
+      </div>
+      <div class="modal-footer">
+        <div class="text-center">
+          <a id="denunciar-btn" class="prolancer-btn" data-bs-toggle="modal" data-bs-target="#message60">Denunciar</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="modal-body">
-<p>Please login to send message</p>
+
+<!-- Adicione o seguinte código após o bloco de código acima -->
+
+<div id="alert-success" class="alert alert-success d-none" role="alert">
+  A denúncia foi efetuada com êxito e as informações foram devidamente registradas.
 </div>
-</div>
-</div>
-</div>
+
+<script>
+  const denunciarBtn = document.getElementById('denunciar-btn');
+  const denunciaTextarea = document.getElementById('denuncia-textarea');
+  const alertSuccess = document.getElementById('alert-success');
+
+  denunciarBtn.addEventListener('click', () => {
+    if (denunciaTextarea.value.trim() === '') {
+      alert('Por favor, escreva algo na caixa para enviar a denúncia.');
+    } else {
+      alertSuccess.classList.remove('d-none');
+    }
+  });
+</script>
 <div class="pt-120">
 <h2 class="mb-5">Outros Serviços</h2>
 <div class="services negative-margin-15" data-slick="{"slidesToShow": 3, "slidesToScroll": 3}">
