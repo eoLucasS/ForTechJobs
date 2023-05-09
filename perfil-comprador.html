@@ -3400,7 +3400,50 @@ Dashboard </a>
 <a href="#" class="follow-button follow-buyer" data-id="177" data-nonce="3c50dfa888"><i class="fad fa-user-plus fa-lg"></i><span>Follow</span></a>
 </li>
 <li><a href="#" class="message-button" data-bs-toggle="modal" data-bs-target="#message177"><i class="fad fa-comments-alt fa-lg"></i><span>Message</span></a></li>
+</li>
+<li><a href="#" class="message-button" data-bs-toggle="modal" data-bs-target="#message177"><i class="fas fa-exclamation-triangle fa-lg"></i><span>Denunciar</span></a></li>
+
+<div class="modal fade" id="message177" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Denunciar Camila Rodrigues</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Descreva com o máximo de informações possíveis para que possamos avaliar a situação.</p>
+        <textarea id="denuncia-textarea"></textarea>
+      </div>
+      <div class="modal-footer">
+        <div class="text-center">
+          <a id="denunciar-btn" class="prolancer-btn">Denunciar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="alert-success" class="alert alert-success d-none" role="alert">
+  A denúncia foi efetuada.
+</div>
+
+<script>
+  const denunciarBtn = document.getElementById('denunciar-btn');
+  const denunciaTextarea = document.getElementById('denuncia-textarea');
+  const alertSuccess = document.getElementById('alert-success');
+
+  denunciarBtn.addEventListener('click', () => {
+    if (denunciaTextarea.value.trim() === '') {
+      alert('Por favor, escreva algo na caixa para enviar a denúncia.');
+    } else {
+      alertSuccess.classList.remove('d-none');
+    }
+  });
+</script>
+
+
 </ul>
+
 
 <div class="modal fade" id="message177" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
