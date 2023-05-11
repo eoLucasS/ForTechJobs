@@ -599,6 +599,7 @@ body.admin-bar .fixed-top {
 .primary-menu ul li {
     display: inline-block;
     margin-right: 40px;
+    bottom:-7px;
     position: relative;
 }
 
