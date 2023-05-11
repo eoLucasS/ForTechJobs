@@ -872,48 +872,132 @@
               <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
               <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                 <li class="dropdown-header text-start">
-                  <h6>Filter</h6>
+                  <h6>Filtro</h6>
                 </li>
 
-                <li><a class="dropdown-item" href="#">Today</a></li>
-                <li><a class="dropdown-item" href="#">This Month</a></li>
-                <li><a class="dropdown-item" href="#">This Year</a></li>
+                <li><a class="dropdown-item" href="#">Hoje</a></li>
+                <li><a class="dropdown-item" href="#">Este Mês</a></li>
+                <li><a class="dropdown-item" href="#">Este Ano</a></li>
               </ul>
             </div>
 
             <div class="card-body pb-0">
-              <h5 class="card-title">News &amp; Updates <span>| Today</span></h5>
+              <h5 class="card-title">Denúncias &amp; Reportes <span>| Hoje</span></h5>
 
-              <div class="news">
-                <div class="post-item clearfix">
-                  <img src="assets/img/news-1.jpg" alt="">
-                  <h4><a href="#">Nihil blanditiis at in nihil autem</a></h4>
-                  <p>Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum...</p>
-                </div>
+<div class="news">
+  <div class="post-item clearfix">
+    <img src="https://cdn.discordapp.com/attachments/1087528687492157481/1087528744668893294/pexels-andrea-piacquadio-3769021.jpg" alt="">
+    <h4><a href="#">Camila Rodrigues</a></h4>
+    <p><a href="#" class="report-link" data-name="Camila Rodrigues" onclick="showReportDialog('Camila Rodrigues')">Ver Denúncia</a></p>
+  </div>
+</div>
 
-                <div class="post-item clearfix">
-                  <img src="assets/img/news-2.jpg" alt="">
-                  <h4><a href="#">Quidem autem et impedit</a></h4>
-                  <p>Illo nemo neque maiores vitae officiis cum eum turos elan dries werona nande...</p>
-                </div>
+<div class="news">
+  <div class="post-item clearfix">
+    <img src="https://fortech-jobs.vercel.app/images/carlosalfredo1.jpg" alt="">
+    <h4><a href="#">Carlos Alfredo</a></h4>
+    <p><a href="#" class="report-link" data-name="Carlos Alfredo" onclick="showReportDialog('Carlos Alfredo')">Ver Denúncia</a></p>
+  </div>
+</div>
 
-                <div class="post-item clearfix">
-                  <img src="assets/img/news-3.jpg" alt="">
-                  <h4><a href="#">Id quia et et ut maxime similique occaecati ut</a></h4>
-                  <p>Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam et totam...</p>
-                </div>
+<div class="modal fade" id="report-modal" tabindex="-1" aria-labelledby="report-modal-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="report-modal-label">Usuário(a) denunciado(a): Camila Rodrigues </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p>Report feito por: Velma Santos</p>
+        <p>Camila não está trabalhando.</p> <!-- alterado o texto aqui -->
+        <textarea class="form-control" placeholder="Opinião final do administrador"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-danger" id="punish-button" data-bs-dismiss="modal" disabled>Punir</button>
+        <button type="button" class="btn btn-primary" id="report-button" data-bs-dismiss="modal">Rejeitar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-                <div class="post-item clearfix">
-                  <img src="assets/img/news-4.jpg" alt="">
-                  <h4><a href="#">Laborum corporis quo dara net para</a></h4>
-                  <p>Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum cuder...</p>
-                </div>
+<script>
+  // Adiciona evento de clique ao link de denúncia
+  document.querySelector('.post-item p').addEventListener('click', function(e) {
+    e.preventDefault();
 
-                <div class="post-item clearfix">
-                  <img src="assets/img/news-5.jpg" alt="">
-                  <h4><a href="#">Et dolores corrupti quae illo quod dolor</a></h4>
-                  <p>Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos eius...</p>
-                </div>
+    // Obtém o nome do usuário denunciado
+    var reportedName = this.previousElementSibling.textContent;
+
+
+    // Mostra o diálogo de denúncia
+    var reportModal = new bootstrap.Modal(document.querySelector('#report-modal'));
+    reportModal.show();
+  });
+
+  // Adiciona evento de mudança ao campo de motivo da denúncia para habilitar o botão de punir
+  document.querySelector('textarea').addEventListener('input', function() {
+    // Habilita o botão de punir se o campo de motivo estiver preenchido
+    var punishButton = document.querySelector('#punish-button');
+    if (this.value.length > 0) {
+      punishButton.disabled = false;
+    } else {
+      punishButton.disabled = true;
+    }
+  });
+
+  // Adiciona evento de clique ao botão de punir
+  document.querySelector('#punish-button').addEventListener('click', function() {
+    // TODO: implementar ação de punir o usuário denunciado
+    alert('Usuário punido!');
+  });
+
+  // Adiciona evento de clique ao botão de denúncia
+  document.querySelector('#report-button').addEventListener('click', function() {
+    // TODO: implementar ação de registrar a denúncia
+    alert('Denúncia Rejeitada!');
+  });
+</script>
+
+<script>
+  // Adiciona evento de clique ao link de denúncia
+  document.querySelector('.post-item p').addEventListener('click', function(e) {
+    e.preventDefault();
+
+    // Obtém o nome do usuário denunciado
+    var reportedName = this.previousElementSibling.textContent;
+
+
+    // Mostra o diálogo de denúncia
+    var reportModal = new bootstrap.Modal(document.querySelector('#report-modal'));
+    reportModal.show();
+  });
+
+  // Adiciona evento de mudança ao campo de motivo da denúncia para habilitar o botão de punir
+  document.querySelector('textarea').addEventListener('input', function() {
+    // Habilita o botão de punir se o campo de motivo estiver preenchido
+    var punishButton = document.querySelector('#punish-button');
+    if (this.value.length > 0) {
+      punishButton.disabled = false;
+    } else {
+      punishButton.disabled = true;
+    }
+  });
+
+  // Adiciona evento de clique ao botão de punir
+  document.querySelector('#punish-button').addEventListener('click', function() {
+    // TODO: implementar ação de punir o usuário denunciado
+    alert('Usuário punido!');
+  });
+
+  // Adiciona evento de clique ao botão de denúncia
+  document.querySelector('#report-button').addEventListener('click', function() {
+    // TODO: implementar ação de registrar a denúncia
+    alert('Denúncia Rejeitada!');
+  });
+</script>
+   
+
 
               </div><!-- End sidebar recent posts-->
 
