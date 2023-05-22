@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Configurações | Painel Admin</title>
-  <link rel="icon" href="favicon.ico"><link href="style.css" rel="stylesheet"></head>
+    <title>
+      ForTech Jobs - Painel Admin
+    </title>
+  <link rel="icon" href="favicon.ico"><link href="assets/style.css" rel="stylesheet"></head>
 
   <body
-    x-data="{ page: 'settings', 'loaded': true, 'darkMode': true, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }"
+    x-data="{ page: 'ecommerce', 'loaded': true, 'darkMode': true, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }"
     x-init="
-          darkMode = JSON.parse(localStorage.getItem('darkMode'));
-          $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
+         darkMode = JSON.parse(localStorage.getItem('darkMode'));
+         $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
     :class="{'dark text-bodydark bg-boxdark-2': darkMode === true}"
   >
     <!-- ===== Preloader Start ===== -->
@@ -38,7 +40,7 @@
   <!-- SIDEBAR HEADER -->
   <div class="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
     <a href="index.html">
-      <img src="src/images/logo/logo.png" alt="Logo" />
+      <img src="assets/src/images/logo/logo.png" alt="Logo" />
     </a>
 
     <button
@@ -79,7 +81,7 @@
           <li>
             <a
               class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
-              href="settings.html#"
+              href="painel-admin.html#"
               @click.prevent="selected = (selected === 'Dashboard' ? '':'Dashboard')"
               :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Dashboard') || (page === 'ecommerce' || page === 'analytics') }"
             >
@@ -137,39 +139,39 @@
               <ul class="mt-4 mb-5.5 flex flex-col gap-2.5 pl-6">
                 <li>
                   <a class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="index.html" :class="page === 'ecommerce' && '!text-white'">eCommerce
+                    href="painel-admin.html" :class="page === 'ecommerce' && '!text-white'">Dashboard
                     </a>
                 </li>
                 <li>
                   <a
                     class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="index-analytics.html"
+                    href="assets/index-analytics.html"
                     :class="page === 'analytics' && '!text-white'"
                     >Analytics
-                    <span class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white">Pro</span></a
+                    <span class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white">Confidencial</span></a
                   >
                 </li>
                 <li>
                   <a
                     class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="index-marketing.html"
+                    href="assets/index-marketing.html"
                     :class="page === 'marketing' && '!text-white'"
                     >Marketing
                     <span
                       class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
+                      >Confidencial</span
                     ></a
                   >
                 </li>
                 <li>
                   <a
                     class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="index-crm.html"
+                    href="assets/index-crm.html"
                     :class="page === 'crm' && '!text-white'"
                     >CRM
                     <span
                       class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
+                      >Confidencial</span
                     ></a
                   >
                 </li>
@@ -210,7 +212,7 @@
           <li>
             <a
               class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
-              href="profile.html"
+              href="assets/profile.html"
               @click="selected = (selected === 'Profile' ? '':'Profile')"
               :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Profile') && (page === 'profile') }"
               :class="page === 'profile' && 'bg-graydark'"
@@ -242,7 +244,7 @@
           <li>
             <a
               class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
-              href="settings.html#"
+              href="painel-admin.html#"
               @click.prevent="selected = (selected === 'Task' ? '':'Task')"
               :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Task') || (page === 'list' || page === 'kanban') }"
             >
@@ -347,7 +349,7 @@
           <li>
             <a
               class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
-              href="settings.html#"
+              href="painel-admin.html#"
               @click.prevent="selected = (selected === 'Forms' ? '':'Forms')"
               :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Forms') || (page === 'formElements' || page === 'formLayout') }"
             >
@@ -472,7 +474,7 @@
           <li>
             <a
               class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
-              href="settings.html#"
+              href="painel-admin.html#"
               @click.prevent="selected = (selected === 'Pages' ? '':'Pages')"
               :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Pages') || (page === 'settings' || page === 'fileManager' || page === 'dataTables' || page === 'pricingTables' || page === 'errorPage' || page === 'mailSuccess') }"
             >
@@ -767,7 +769,7 @@
           <!-- Menu Item Chart -->
           <li>
             <a class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
-              href="settings.html#" @click.prevent="selected = (selected === 'Charts' ? '':'Charts')"
+              href="painel-admin.html#" @click.prevent="selected = (selected === 'Charts' ? '':'Charts')"
               :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'Charts') || (page === 'basicChart' || page === 'advancedChart') }">
               <svg class="fill-current" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_130_9801)">
@@ -819,7 +821,7 @@
           <li>
             <a
               class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
-              href="settings.html#"
+              href="painel-admin.html#"
               @click.prevent="selected = (selected === 'UiElements' ? '':'UiElements')"
               :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'UiElements') || (page === 'alerts' || page === 'buttons' || page === 'card' || page === 'tabs' || page === 'modals') }"
             >
@@ -1101,7 +1103,7 @@
           <li>
             <a
               class="group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
-              href="settings.html#"
+              href="painel-admin.html#"
               @click.prevent="selected = (selected === 'AuthPages' ? '':'AuthPages')"
               :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'AuthPages') || (page === 'register' || page === 'login' || page === 'forgetPassword') }"
             >
@@ -1266,7 +1268,7 @@
       </button>
       <!-- Hamburger Toggle BTN -->
       <a class="block flex-shrink-0 lg:hidden" href="index.html">
-        <img src="src/images/logo/logo-icon.png" alt="Logo" />
+        <img src="assets/src/images/logo/logo.png" alt="Logo" />
       </a>
     </div>
     <div class="hidden sm:block">
@@ -1368,7 +1370,7 @@
         >
           <a
             class="relative flex h-8.5 w-8.5 items-center justify-center rounded-full border-[0.5px] border-stroke bg-gray hover:text-primary dark:border-strokedark dark:bg-meta-4 dark:text-white"
-            href="settings.html#"
+            href="painel-admin.html#"
             @click.prevent="dropdownOpen = ! dropdownOpen; notifying = false"
           >
             <span
@@ -1408,7 +1410,7 @@
               <li>
                 <a
                   class="flex flex-col gap-2.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
-                  href="settings.html#"
+                  href="painel-admin.html#"
                 >
                   <p class="text-sm">
                     <span class="text-black dark:text-white"
@@ -1424,7 +1426,7 @@
               <li>
                 <a
                   class="flex flex-col gap-2.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
-                  href="settings.html#"
+                  href="painel-admin.html#"
                 >
                   <p class="text-sm">
                     <span class="text-black dark:text-white"
@@ -1439,7 +1441,7 @@
               <li>
                 <a
                   class="flex flex-col gap-2.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
-                  href="settings.html#"
+                  href="painel-admin.html#"
                 >
                   <p class="text-sm">
                     <span class="text-black dark:text-white"
@@ -1455,7 +1457,7 @@
               <li>
                 <a
                   class="flex flex-col gap-2.5 border-t border-stroke px-4.5 py-3 hover:bg-gray-2 dark:border-strokedark dark:hover:bg-meta-4"
-                  href="settings.html#"
+                  href="painel-admin.html#"
                 >
                   <p class="text-sm">
                     <span class="text-black dark:text-white"
@@ -1482,7 +1484,7 @@
         >
           <a
             class="relative flex h-8.5 w-8.5 items-center justify-center rounded-full border-[0.5px] border-stroke bg-gray hover:text-primary dark:border-strokedark dark:bg-meta-4 dark:text-white"
-            href="settings.html#"
+            href="painel-admin.html#"
             @click.prevent="dropdownOpen = ! dropdownOpen; notifying = false"
           >
             <span
@@ -1537,7 +1539,7 @@
                   href="messages.html"
                 >
                   <div class="h-12.5 w-12.5 rounded-full">
-                    <img src="src/images/user/user-02.png" alt="User" />
+                    <img src="assets/src/images/user/user-02.png" alt="User" />
                   </div>
 
                   <div>
@@ -1555,7 +1557,7 @@
                   href="messages.html"
                 >
                   <div class="h-12.5 w-12.5 rounded-full">
-                    <img src="src/images/user/user-01.png" alt="User" />
+                    <img src="assets/src/images/user/user-01.png" alt="User" />
                   </div>
 
                   <div>
@@ -1573,7 +1575,7 @@
                   href="messages.html"
                 >
                   <div class="h-12.5 w-12.5 rounded-full">
-                    <img src="src/images/user/user-03.png" alt="User" />
+                    <img src="assets/src/images/user/user-03.png" alt="User" />
                   </div>
 
                   <div>
@@ -1591,7 +1593,7 @@
                   href="messages.html"
                 >
                   <div class="h-12.5 w-12.5 rounded-full">
-                    <img src="src/images/user/user-04.png" alt="User" />
+                    <img src="assets/src/images/user/user-04.png" alt="User" />
                   </div>
 
                   <div>
@@ -1609,7 +1611,7 @@
                   href="messages.html"
                 >
                   <div class="h-12.5 w-12.5 rounded-full">
-                    <img src="src/images/user/user-02.png" alt="User" />
+                    <img src="assets/src/images/user/user-02.png" alt="User" />
                   </div>
 
                   <div>
@@ -1636,18 +1638,18 @@
       >
         <a
           class="flex items-center gap-4"
-          href="settings.html#"
+          href="painel-admin.html#"
           @click.prevent="dropdownOpen = ! dropdownOpen"
         >
           <span class="hidden text-right lg:block">
             <span class="block text-sm font-medium text-black dark:text-white"
-              >Admnistrador</span
+              >Administrador</span
             >
             <span class="block text-xs font-medium">Geral</span>
           </span>
 
           <span class="h-12 w-12 rounded-full">
-            <img src="src/images/user/user-01.png" alt="User" />
+            <img src="assets/src/images/user/user-01.jpg" alt="User" />
           </span>
 
           <svg
@@ -1678,7 +1680,7 @@
           >
             <li>
               <a
-                href="profile.html"
+                href="assets/profile.html"
                 class="flex items-center gap-3.5 text-sm font-medium duration-300 ease-in-out hover:text-primary lg:text-base"
               >
                 <svg
@@ -1703,7 +1705,7 @@
             </li>
             <li>
               <a
-                href="settings.html#"
+                href="painel-admin.html#"
                 class="flex items-center gap-3.5 text-sm font-medium duration-300 ease-in-out hover:text-primary lg:text-base"
               >
                 <svg
@@ -1783,345 +1785,813 @@
         <!-- ===== Main Content Start ===== -->
         <main>
           <div class="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
-            <div class="mx-auto max-w-270">
-              <!-- Breadcrumb Start -->
+            <div
+              class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4 2xl:gap-7.5"
+            >
+              <!-- Card Item Start -->
               <div
-                class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
+                class="rounded-sm border border-stroke bg-white py-6 px-7.5 shadow-default dark:border-strokedark dark:bg-boxdark"
               >
-                <h2 class="text-title-md2 font-bold text-black dark:text-white">
-                  Adicionar Admin
-                </h2>
-
-                <nav>
-                  <ol class="flex items-center gap-2">
-                    <li>
-                      <a class="font-medium" href="index.html">Dashboard /</a>
-                    </li>
-                    <li class="font-medium text-primary">Settings</li>
-                  </ol>
-                </nav>
-              </div>
-              <!-- Breadcrumb End -->
-
-              <!-- ====== Settings Section Start -->
-              <div class="grid grid-cols-5 gap-8">
-                <div class="col-span-5 xl:col-span-3">
-                  <div
-                    class="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark"
+                <div
+                  class="flex h-11.5 w-11.5 items-center justify-center rounded-full bg-meta-2 dark:bg-meta-4"
+                >
+                  <svg
+                    class="fill-primary dark:fill-white"
+                    width="22"
+                    height="16"
+                    viewBox="0 0 22 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <div
-                      class="border-b border-stroke py-4 px-7 dark:border-strokedark"
+                    <path
+                      d="M11 15.1156C4.19376 15.1156 0.825012 8.61876 0.687512 8.34376C0.584387 8.13751 0.584387 7.86251 0.687512 7.65626C0.825012 7.38126 4.19376 0.918762 11 0.918762C17.8063 0.918762 21.175 7.38126 21.3125 7.65626C21.4156 7.86251 21.4156 8.13751 21.3125 8.34376C21.175 8.61876 17.8063 15.1156 11 15.1156ZM2.26876 8.00001C3.02501 9.27189 5.98126 13.5688 11 13.5688C16.0188 13.5688 18.975 9.27189 19.7313 8.00001C18.975 6.72814 16.0188 2.43126 11 2.43126C5.98126 2.43126 3.02501 6.72814 2.26876 8.00001Z"
+                      fill=""
+                    />
+                    <path
+                      d="M11 10.9219C9.38438 10.9219 8.07812 9.61562 8.07812 8C8.07812 6.38438 9.38438 5.07812 11 5.07812C12.6156 5.07812 13.9219 6.38438 13.9219 8C13.9219 9.61562 12.6156 10.9219 11 10.9219ZM11 6.625C10.2437 6.625 9.625 7.24375 9.625 8C9.625 8.75625 10.2437 9.375 11 9.375C11.7563 9.375 12.375 8.75625 12.375 8C12.375 7.24375 11.7563 6.625 11 6.625Z"
+                      fill=""
+                    />
+                  </svg>
+                </div>
+
+                <div class="mt-4 flex items-end justify-between">
+                  <div>
+                    <h4
+                      class="text-title-md font-bold text-black dark:text-white"
                     >
-                      <h3 class="font-medium text-black dark:text-white">
-                        Informações pessoais
-                      </h3>
-                    </div>
-                    <div class="p-7">
-                      <form action="settings.html#">
-                        <div class="mb-5.5 flex flex-col gap-5.5 sm:flex-row">
-                          <div class="w-full sm:w-1/2">
-                            <label
-                              class="mb-3 block text-sm font-medium text-black dark:text-white"
-                              for="fullName"
-                              >Nome Completo</label
+                      $3.456K
+                    </h4>
+                    <span class="text-sm font-medium">Total views</span>
+                  </div>
+
+                  <span
+                    class="flex items-center gap-1 text-sm font-medium text-meta-3"
+                  >
+                    0.43%
+                    <svg
+                      class="fill-meta-3"
+                      width="10"
+                      height="11"
+                      viewBox="0 0 10 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.35716 2.47737L0.908974 5.82987L5.0443e-07 4.94612L5 0.0848689L10 4.94612L9.09103 5.82987L5.64284 2.47737L5.64284 10.0849L4.35716 10.0849L4.35716 2.47737Z"
+                        fill=""
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <!-- Card Item End -->
+
+              <!-- Card Item Start -->
+              <div
+                class="rounded-sm border border-stroke bg-white py-6 px-7.5 shadow-default dark:border-strokedark dark:bg-boxdark"
+              >
+                <div
+                  class="flex h-11.5 w-11.5 items-center justify-center rounded-full bg-meta-2 dark:bg-meta-4"
+                >
+                  <svg
+                    class="fill-primary dark:fill-white"
+                    width="20"
+                    height="22"
+                    viewBox="0 0 20 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.7531 16.4312C10.3781 16.4312 9.27808 17.5312 9.27808 18.9062C9.27808 20.2812 10.3781 21.3812 11.7531 21.3812C13.1281 21.3812 14.2281 20.2812 14.2281 18.9062C14.2281 17.5656 13.0937 16.4312 11.7531 16.4312ZM11.7531 19.8687C11.2375 19.8687 10.825 19.4562 10.825 18.9406C10.825 18.425 11.2375 18.0125 11.7531 18.0125C12.2687 18.0125 12.6812 18.425 12.6812 18.9406C12.6812 19.4219 12.2343 19.8687 11.7531 19.8687Z"
+                      fill=""
+                    />
+                    <path
+                      d="M5.22183 16.4312C3.84683 16.4312 2.74683 17.5312 2.74683 18.9062C2.74683 20.2812 3.84683 21.3812 5.22183 21.3812C6.59683 21.3812 7.69683 20.2812 7.69683 18.9062C7.69683 17.5656 6.56245 16.4312 5.22183 16.4312ZM5.22183 19.8687C4.7062 19.8687 4.2937 19.4562 4.2937 18.9406C4.2937 18.425 4.7062 18.0125 5.22183 18.0125C5.73745 18.0125 6.14995 18.425 6.14995 18.9406C6.14995 19.4219 5.73745 19.8687 5.22183 19.8687Z"
+                      fill=""
+                    />
+                    <path
+                      d="M19.0062 0.618744H17.15C16.325 0.618744 15.6031 1.23749 15.5 2.06249L14.95 6.01562H1.37185C1.0281 6.01562 0.684353 6.18749 0.443728 6.46249C0.237478 6.73749 0.134353 7.11562 0.237478 7.45937C0.237478 7.49374 0.237478 7.49374 0.237478 7.52812L2.36873 13.9562C2.50623 14.4375 2.9531 14.7812 3.46873 14.7812H12.9562C14.2281 14.7812 15.3281 13.8187 15.5 12.5469L16.9437 2.26874C16.9437 2.19999 17.0125 2.16562 17.0812 2.16562H18.9375C19.35 2.16562 19.7281 1.82187 19.7281 1.37499C19.7281 0.928119 19.4187 0.618744 19.0062 0.618744ZM14.0219 12.3062C13.9531 12.8219 13.5062 13.2 12.9906 13.2H3.7781L1.92185 7.56249H14.7094L14.0219 12.3062Z"
+                      fill=""
+                    />
+                  </svg>
+                </div>
+
+                <div class="mt-4 flex items-end justify-between">
+                  <div>
+                    <h4
+                      class="text-title-md font-bold text-black dark:text-white"
+                    >
+                      $45,2K
+                    </h4>
+                    <span class="text-sm font-medium">Total Profit</span>
+                  </div>
+
+                  <span
+                    class="flex items-center gap-1 text-sm font-medium text-meta-3"
+                  >
+                    4.35%
+                    <svg
+                      class="fill-meta-3"
+                      width="10"
+                      height="11"
+                      viewBox="0 0 10 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.35716 2.47737L0.908974 5.82987L5.0443e-07 4.94612L5 0.0848689L10 4.94612L9.09103 5.82987L5.64284 2.47737L5.64284 10.0849L4.35716 10.0849L4.35716 2.47737Z"
+                        fill=""
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <!-- Card Item End -->
+
+              <!-- Card Item Start -->
+              <div
+                class="rounded-sm border border-stroke bg-white py-6 px-7.5 shadow-default dark:border-strokedark dark:bg-boxdark"
+              >
+                <div
+                  class="flex h-11.5 w-11.5 items-center justify-center rounded-full bg-meta-2 dark:bg-meta-4"
+                >
+                  <svg
+                    class="fill-primary dark:fill-white"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.1063 18.0469L19.3875 3.23126C19.2157 1.71876 17.9438 0.584381 16.3969 0.584381H5.56878C4.05628 0.584381 2.78441 1.71876 2.57816 3.23126L0.859406 18.0469C0.756281 18.9063 1.03128 19.7313 1.61566 20.3844C2.20003 21.0375 2.99066 21.3813 3.85003 21.3813H18.1157C18.975 21.3813 19.8 21.0031 20.35 20.3844C20.9 19.7656 21.2094 18.9063 21.1063 18.0469ZM19.2157 19.3531C18.9407 19.6625 18.5625 19.8344 18.15 19.8344H3.85003C3.43753 19.8344 3.05941 19.6625 2.78441 19.3531C2.50941 19.0438 2.37191 18.6313 2.44066 18.2188L4.12503 3.43751C4.19378 2.71563 4.81253 2.16563 5.56878 2.16563H16.4313C17.1532 2.16563 17.7719 2.71563 17.875 3.43751L19.5938 18.2531C19.6282 18.6656 19.4907 19.0438 19.2157 19.3531Z"
+                      fill=""
+                    />
+                    <path
+                      d="M14.3345 5.29375C13.922 5.39688 13.647 5.80938 13.7501 6.22188C13.7845 6.42813 13.8189 6.63438 13.8189 6.80625C13.8189 8.35313 12.547 9.625 11.0001 9.625C9.45327 9.625 8.1814 8.35313 8.1814 6.80625C8.1814 6.6 8.21577 6.42813 8.25015 6.22188C8.35327 5.80938 8.07827 5.39688 7.66577 5.29375C7.25327 5.19063 6.84077 5.46563 6.73765 5.87813C6.6689 6.1875 6.63452 6.49688 6.63452 6.80625C6.63452 9.2125 8.5939 11.1719 11.0001 11.1719C13.4064 11.1719 15.3658 9.2125 15.3658 6.80625C15.3658 6.49688 15.3314 6.1875 15.2626 5.87813C15.1595 5.46563 14.747 5.225 14.3345 5.29375Z"
+                      fill=""
+                    />
+                  </svg>
+                </div>
+
+                <div class="mt-4 flex items-end justify-between">
+                  <div>
+                    <h4
+                      class="text-title-md font-bold text-black dark:text-white"
+                    >
+                      2.450
+                    </h4>
+                    <span class="text-sm font-medium">Total Product</span>
+                  </div>
+
+                  <span
+                    class="flex items-center gap-1 text-sm font-medium text-meta-3"
+                  >
+                    2.59%
+                    <svg
+                      class="fill-meta-3"
+                      width="10"
+                      height="11"
+                      viewBox="0 0 10 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.35716 2.47737L0.908974 5.82987L5.0443e-07 4.94612L5 0.0848689L10 4.94612L9.09103 5.82987L5.64284 2.47737L5.64284 10.0849L4.35716 10.0849L4.35716 2.47737Z"
+                        fill=""
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <!-- Card Item End -->
+
+              <!-- Card Item Start -->
+              <div
+                class="rounded-sm border border-stroke bg-white py-6 px-7.5 shadow-default dark:border-strokedark dark:bg-boxdark"
+              >
+                <div
+                  class="flex h-11.5 w-11.5 items-center justify-center rounded-full bg-meta-2 dark:bg-meta-4"
+                >
+                  <svg
+                    class="fill-primary dark:fill-white"
+                    width="22"
+                    height="18"
+                    viewBox="0 0 22 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.18418 8.03751C9.31543 8.03751 11.0686 6.35313 11.0686 4.25626C11.0686 2.15938 9.31543 0.475006 7.18418 0.475006C5.05293 0.475006 3.2998 2.15938 3.2998 4.25626C3.2998 6.35313 5.05293 8.03751 7.18418 8.03751ZM7.18418 2.05626C8.45605 2.05626 9.52168 3.05313 9.52168 4.29063C9.52168 5.52813 8.49043 6.52501 7.18418 6.52501C5.87793 6.52501 4.84668 5.52813 4.84668 4.29063C4.84668 3.05313 5.9123 2.05626 7.18418 2.05626Z"
+                      fill=""
+                    />
+                    <path
+                      d="M15.8124 9.6875C17.6687 9.6875 19.1468 8.24375 19.1468 6.42188C19.1468 4.6 17.6343 3.15625 15.8124 3.15625C13.9905 3.15625 12.478 4.6 12.478 6.42188C12.478 8.24375 13.9905 9.6875 15.8124 9.6875ZM15.8124 4.7375C16.8093 4.7375 17.5999 5.49375 17.5999 6.45625C17.5999 7.41875 16.8093 8.175 15.8124 8.175C14.8155 8.175 14.0249 7.41875 14.0249 6.45625C14.0249 5.49375 14.8155 4.7375 15.8124 4.7375Z"
+                      fill=""
+                    />
+                    <path
+                      d="M15.9843 10.0313H15.6749C14.6437 10.0313 13.6468 10.3406 12.7874 10.8563C11.8593 9.61876 10.3812 8.79376 8.73115 8.79376H5.67178C2.85303 8.82814 0.618652 11.0625 0.618652 13.8469V16.3219C0.618652 16.975 1.13428 17.4906 1.7874 17.4906H20.2468C20.8999 17.4906 21.4499 16.9406 21.4499 16.2875V15.4625C21.4155 12.4719 18.9749 10.0313 15.9843 10.0313ZM2.16553 15.9438V13.8469C2.16553 11.9219 3.74678 10.3406 5.67178 10.3406H8.73115C10.6562 10.3406 12.2374 11.9219 12.2374 13.8469V15.9438H2.16553V15.9438ZM19.8687 15.9438H13.7499V13.8469C13.7499 13.2969 13.6468 12.7469 13.4749 12.2313C14.0937 11.7844 14.8499 11.5781 15.6405 11.5781H15.9499C18.0812 11.5781 19.8343 13.3313 19.8343 15.4625V15.9438H19.8687Z"
+                      fill=""
+                    />
+                  </svg>
+                </div>
+
+                <div class="mt-4 flex items-end justify-between">
+                  <div>
+                    <h4
+                      class="text-title-md font-bold text-black dark:text-white"
+                    >
+                      3.456
+                    </h4>
+                    <span class="text-sm font-medium">Total Users</span>
+                  </div>
+
+                  <span
+                    class="flex items-center gap-1 text-sm font-medium text-meta-5"
+                  >
+                    0.95%
+                    <svg
+                      class="fill-meta-5"
+                      width="10"
+                      height="11"
+                      viewBox="0 0 10 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.64284 7.69237L9.09102 4.33987L10 5.22362L5 10.0849L-8.98488e-07 5.22362L0.908973 4.33987L4.35716 7.69237L4.35716 0.0848701L5.64284 0.0848704L5.64284 7.69237Z"
+                        fill=""
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <!-- Card Item End -->
+            </div>
+
+            <div
+              class="mt-4 grid grid-cols-12 gap-4 md:mt-6 md:gap-6 2xl:mt-7.5 2xl:gap-7.5"
+            >
+              <!-- ====== Chart One Start -->
+              <div
+  class="col-span-12 rounded-sm border border-stroke bg-white px-5 pt-7.5 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:col-span-8"
+>
+  <div class="flex flex-wrap items-start justify-between gap-3 sm:flex-nowrap">
+    <div class="flex w-full flex-wrap gap-3 sm:gap-5">
+      <div class="flex min-w-47.5">
+        <span
+          class="mt-1 mr-2 flex h-4 w-full max-w-4 items-center justify-center rounded-full border border-primary"
+        >
+          <span
+            class="block h-2.5 w-full max-w-2.5 rounded-full bg-primary"
+          ></span>
+        </span>
+        <div class="w-full">
+          <p class="font-semibold text-primary">Total Revenue</p>
+          <p class="text-sm font-medium">12.04.2022 - 12.05.2022</p>
+        </div>
+      </div>
+      <div class="flex min-w-47.5">
+        <span
+          class="mt-1 mr-2 flex h-4 w-full max-w-4 items-center justify-center rounded-full border border-secondary"
+        >
+          <span
+            class="block h-2.5 w-full max-w-2.5 rounded-full bg-secondary"
+          ></span>
+        </span>
+        <div class="w-full">
+          <p class="font-semibold text-secondary">Total Sales</p>
+          <p class="text-sm font-medium">12.04.2022 - 12.05.2022</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex w-full max-w-45 justify-end">
+      <div
+        class="inline-flex items-center rounded-md bg-whiter p-1.5 dark:bg-meta-4"
+      >
+        <button
+          class="rounded bg-white py-1 px-3 text-xs font-medium text-black shadow-card hover:bg-white hover:shadow-card dark:bg-boxdark dark:text-white dark:hover:bg-boxdark"
+        >
+          Day
+        </button>
+        <button
+          class="rounded py-1 px-3 text-xs font-medium text-black hover:bg-white hover:shadow-card dark:text-white dark:hover:bg-boxdark"
+        >
+          Week
+        </button>
+        <button
+          class="rounded py-1 px-3 text-xs font-medium text-black hover:bg-white hover:shadow-card dark:text-white dark:hover:bg-boxdark"
+        >
+          Month
+        </button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div id="chartOne" class="-ml-5"></div>
+  </div>
+</div>
+
+              <!-- ====== Chart One End -->
+
+              <!-- ====== Chart Two Start -->
+              <div
+  class="col-span-12 rounded-sm border border-stroke bg-white p-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4"
+>
+  <div class="mb-4 justify-between gap-4 sm:flex">
+    <div>
+      <h4 class="text-xl font-bold text-black dark:text-white">
+        Profit this week
+      </h4>
+    </div>
+    <div>
+      <div class="relative z-20 inline-block">
+        <select
+          name="#"
+          id="#"
+          class="relative z-20 inline-flex appearance-none bg-transparent py-1 pl-3 pr-8 text-sm font-medium outline-none"
+        >
+          <option value="">This Week</option>
+          <option value="">Last Week</option>
+        </select>
+        <span class="absolute top-1/2 right-3 z-10 -translate-y-1/2">
+          <svg
+            width="10"
+            height="6"
+            viewBox="0 0 10 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.47072 1.08816C0.47072 1.02932 0.500141 0.955772 0.54427 0.911642C0.647241 0.808672 0.809051 0.808672 0.912022 0.896932L4.85431 4.60386C4.92785 4.67741 5.06025 4.67741 5.14851 4.60386L9.09079 0.896932C9.19376 0.793962 9.35557 0.808672 9.45854 0.911642C9.56151 1.01461 9.5468 1.17642 9.44383 1.27939L5.50155 4.98632C5.22206 5.23639 4.78076 5.23639 4.51598 4.98632L0.558981 1.27939C0.50014 1.22055 0.47072 1.16171 0.47072 1.08816Z"
+              fill="#637381"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M1.22659 0.546578L5.00141 4.09604L8.76422 0.557869C9.08459 0.244537 9.54201 0.329403 9.79139 0.578788C10.112 0.899434 10.0277 1.36122 9.77668 1.61224L9.76644 1.62248L5.81552 5.33722C5.36257 5.74249 4.6445 5.7544 4.19352 5.32924C4.19327 5.32901 4.19377 5.32948 4.19352 5.32924L0.225953 1.61241C0.102762 1.48922 -4.20186e-08 1.31674 -3.20269e-08 1.08816C-2.40601e-08 0.905899 0.0780105 0.712197 0.211421 0.578787C0.494701 0.295506 0.935574 0.297138 1.21836 0.539529L1.22659 0.546578ZM4.51598 4.98632C4.78076 5.23639 5.22206 5.23639 5.50155 4.98632L9.44383 1.27939C9.5468 1.17642 9.56151 1.01461 9.45854 0.911642C9.35557 0.808672 9.19376 0.793962 9.09079 0.896932L5.14851 4.60386C5.06025 4.67741 4.92785 4.67741 4.85431 4.60386L0.912022 0.896932C0.809051 0.808672 0.647241 0.808672 0.54427 0.911642C0.500141 0.955772 0.47072 1.02932 0.47072 1.08816C0.47072 1.16171 0.50014 1.22055 0.558981 1.27939L4.51598 4.98632Z"
+              fill="#637381"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div id="chartTwo" class="-ml-5 -mb-9"></div>
+  </div>
+</div>
+
+              <!-- ====== Chart Two End -->
+              <!-- ====== Table One Start -->
+              <div class="col-span-12 xl:col-span-8">
+                <div
+  class="rounded-sm border border-stroke bg-white px-5 pt-6 pb-2.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1"
+>
+  <h4 class="mb-6 text-xl font-bold text-black dark:text-white">
+    Top Channels
+  </h4>
+
+  <div class="flex flex-col">
+    <div
+      class="grid grid-cols-3 rounded-sm bg-gray-2 dark:bg-meta-4 sm:grid-cols-5"
+    >
+      <div class="p-2.5 xl:p-5">
+        <h5 class="text-sm font-medium uppercase xsm:text-base">Source</h5>
+      </div>
+      <div class="p-2.5 text-center xl:p-5">
+        <h5 class="text-sm font-medium uppercase xsm:text-base">Visitors</h5>
+      </div>
+      <div class="p-2.5 text-center xl:p-5">
+        <h5 class="text-sm font-medium uppercase xsm:text-base">Revenues</h5>
+      </div>
+      <div class="hidden p-2.5 text-center sm:block xl:p-5">
+        <h5 class="text-sm font-medium uppercase xsm:text-base">Sales</h5>
+      </div>
+      <div class="hidden p-2.5 text-center sm:block xl:p-5">
+        <h5 class="text-sm font-medium uppercase xsm:text-base">Conversion</h5>
+      </div>
+    </div>
+
+    <div
+      class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5"
+    >
+      <div class="flex items-center gap-3 p-2.5 xl:p-5">
+        <div class="flex-shrink-0">
+          <img src="assets/src/images/brand/brand-01.svg" alt="Brand" />
+        </div>
+        <p class="hidden font-medium text-black dark:text-white sm:block">
+          Google
+        </p>
+      </div>
+
+      <div class="flex items-center justify-center p-2.5 xl:p-5">
+        <p class="font-medium text-black dark:text-white">3.5K</p>
+      </div>
+
+      <div class="flex items-center justify-center p-2.5 xl:p-5">
+        <p class="font-medium text-meta-3">$5,768</p>
+      </div>
+
+      <div class="hidden items-center justify-center p-2.5 sm:flex xl:p-5">
+        <p class="font-medium text-black dark:text-white">590</p>
+      </div>
+
+      <div class="hidden items-center justify-center p-2.5 sm:flex xl:p-5">
+        <p class="font-medium text-meta-5">4.8%</p>
+      </div>
+    </div>
+
+    <div
+      class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5"
+    >
+      <div class="flex items-center gap-3 p-2.5 xl:p-5">
+        <div class="flex-shrink-0">
+          <img src="assets/src/images/brand/brand-02.svg" alt="Brand" />
+        </div>
+        <p class="hidden font-medium text-black dark:text-white sm:block">
+          Twitter
+        </p>
+      </div>
+
+      <div class="flex items-center justify-center p-2.5 xl:p-5">
+        <p class="font-medium text-black dark:text-white">2.2K</p>
+      </div>
+
+      <div class="flex items-center justify-center p-2.5 xl:p-5">
+        <p class="font-medium text-meta-3">$4,635</p>
+      </div>
+
+      <div class="hidden items-center justify-center p-2.5 sm:flex xl:p-5">
+        <p class="font-medium text-black dark:text-white">467</p>
+      </div>
+
+      <div class="hidden items-center justify-center p-2.5 sm:flex xl:p-5">
+        <p class="font-medium text-meta-5">4.3%</p>
+      </div>
+    </div>
+
+    <div
+      class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5"
+    >
+      <div class="flex items-center gap-3 p-2.5 xl:p-5">
+        <div class="flex-shrink-0">
+          <img src="assets/src/images/brand/brand-03.svg" alt="Brand" />
+        </div>
+        <p class="hidden font-medium text-black dark:text-white sm:block">
+          Github
+        </p>
+      </div>
+
+      <div class="flex items-center justify-center p-2.5 xl:p-5">
+        <p class="font-medium text-black dark:text-white">2.1K</p>
+      </div>
+
+      <div class="flex items-center justify-center p-2.5 xl:p-5">
+        <p class="font-medium text-meta-3">$4,290</p>
+      </div>
+
+      <div class="hidden items-center justify-center p-2.5 sm:flex xl:p-5">
+        <p class="font-medium text-black dark:text-white">420</p>
+      </div>
+
+      <div class="hidden items-center justify-center p-2.5 sm:flex xl:p-5">
+        <p class="font-medium text-meta-5">3.7%</p>
+      </div>
+    </div>
+
+    <div
+      class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5"
+    >
+      <div class="flex items-center gap-3 p-2.5 xl:p-5">
+        <div class="flex-shrink-0">
+          <img src="assets/src/images/brand/brand-04.svg" alt="Brand" />
+        </div>
+        <p class="hidden font-medium text-black dark:text-white sm:block">
+          Vimeo
+        </p>
+      </div>
+
+      <div class="flex items-center justify-center p-2.5 xl:p-5">
+        <p class="font-medium text-black dark:text-white">1.5K</p>
+      </div>
+
+      <div class="flex items-center justify-center p-2.5 xl:p-5">
+        <p class="font-medium text-meta-3">$3,580</p>
+      </div>
+
+      <div class="hidden items-center justify-center p-2.5 sm:flex xl:p-5">
+        <p class="font-medium text-black dark:text-white">389</p>
+      </div>
+
+      <div class="hidden items-center justify-center p-2.5 sm:flex xl:p-5">
+        <p class="font-medium text-meta-5">2.5%</p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-3 sm:grid-cols-5">
+      <div class="flex items-center gap-3 p-2.5 xl:p-5">
+        <div class="flex-shrink-0">
+          <img src="assets/src/images/brand/brand-05.svg" alt="Brand" />
+        </div>
+        <p class="hidden font-medium text-black dark:text-white sm:block">
+          Facebook
+        </p>
+      </div>
+
+      <div class="flex items-center justify-center p-2.5 xl:p-5">
+        <p class="font-medium text-black dark:text-white">1.2K</p>
+      </div>
+
+      <div class="flex items-center justify-center p-2.5 xl:p-5">
+        <p class="font-medium text-meta-3">$2,740</p>
+      </div>
+
+      <div class="hidden items-center justify-center p-2.5 sm:flex xl:p-5">
+        <p class="font-medium text-black dark:text-white">230</p>
+      </div>
+
+      <div class="hidden items-center justify-center p-2.5 sm:flex xl:p-5">
+        <p class="font-medium text-meta-5">1.9%</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+              <!-- ====== Table One End -->
+                            <!-- ====== Chat Card Start -->
+                            <div
+                            class="col-span-12 rounded-sm border border-stroke bg-white py-6 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4"
+                          >
+                            <h4
+                              class="mb-6 px-7.5 text-xl font-bold text-black dark:text-white"
                             >
-                            <div class="relative">
-                              <span class="absolute left-4.5 top-4">
-                                <svg
-                                  class="fill-current"
-                                  width="20"
-                                  height="20"
-                                  viewBox="0 0 20 20"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <g opacity="0.8">
-                                    <path
-                                      fill-rule="evenodd"
-                                      clip-rule="evenodd"
-                                      d="M3.72039 12.887C4.50179 12.1056 5.5616 11.6666 6.66667 11.6666H13.3333C14.4384 11.6666 15.4982 12.1056 16.2796 12.887C17.061 13.6684 17.5 14.7282 17.5 15.8333V17.5C17.5 17.9602 17.1269 18.3333 16.6667 18.3333C16.2064 18.3333 15.8333 17.9602 15.8333 17.5V15.8333C15.8333 15.1703 15.5699 14.5344 15.1011 14.0655C14.6323 13.5967 13.9964 13.3333 13.3333 13.3333H6.66667C6.00363 13.3333 5.36774 13.5967 4.8989 14.0655C4.43006 14.5344 4.16667 15.1703 4.16667 15.8333V17.5C4.16667 17.9602 3.79357 18.3333 3.33333 18.3333C2.8731 18.3333 2.5 17.9602 2.5 17.5V15.8333C2.5 14.7282 2.93899 13.6684 3.72039 12.887Z"
-                                      fill=""
-                                    />
-                                    <path
-                                      fill-rule="evenodd"
-                                      clip-rule="evenodd"
-                                      d="M9.99967 3.33329C8.61896 3.33329 7.49967 4.45258 7.49967 5.83329C7.49967 7.214 8.61896 8.33329 9.99967 8.33329C11.3804 8.33329 12.4997 7.214 12.4997 5.83329C12.4997 4.45258 11.3804 3.33329 9.99967 3.33329ZM5.83301 5.83329C5.83301 3.53211 7.69849 1.66663 9.99967 1.66663C12.3009 1.66663 14.1663 3.53211 14.1663 5.83329C14.1663 8.13448 12.3009 9.99996 9.99967 9.99996C7.69849 9.99996 5.83301 8.13448 5.83301 5.83329Z"
-                                      fill=""
-                                    />
-                                  </g>
-                                </svg>
-                              </span>
-                              <input
-                                class="w-full rounded border border-stroke bg-gray py-3 pl-11.5 pr-4.5 font-medium text-black focus:border-primary focus-visible:outline-none dark:border-strokedark dark:bg-meta-4 dark:text-white dark:focus:border-primary"
-                                type="text"
-                                name="fullName"
-                                id="fullName"
-                                placeholder="CEO"
-                                value="CEO"
-                              />
+                              Chats
+                            </h4>
+            
+                            <div>
+                              <a
+                                href="messages.html"
+                                class="flex items-center gap-5 py-3 px-7.5 hover:bg-gray-3 dark:hover:bg-meta-4"
+                              >
+                                <div class="relative h-14 w-14 rounded-full">
+                                  <img src="assets/src/images/user/user-03.png" alt="User" />
+                                  <span
+                                    class="absolute right-0 bottom-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-meta-3"
+                                  ></span>
+                                </div>
+            
+                                <div class="flex flex-1 items-center justify-between">
+                                  <div>
+                                    <h5 class="font-medium text-black dark:text-white">
+                                      Devid Heilo
+                                    </h5>
+                                    <p>
+                                      <span
+                                        class="text-sm font-medium text-black dark:text-white"
+                                        >Hello, how are you?</span
+                                      >
+                                      <span class="text-xs"> . 12 min</span>
+                                    </p>
+                                  </div>
+                                  <div
+                                    class="flex h-6 w-6 items-center justify-center rounded-full bg-primary"
+                                  >
+                                    <span class="text-sm font-medium text-white">3</span>
+                                  </div>
+                                </div>
+                              </a>
+                              <a
+                                href="messages.html"
+                                class="flex items-center gap-5 py-3 px-7.5 hover:bg-gray-3 dark:hover:bg-meta-4"
+                              >
+                                <div class="relative h-14 w-14 rounded-full">
+                                  <img src="assets/src/images/user/user-04.png" alt="User" />
+                                  <span
+                                    class="absolute right-0 bottom-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-meta-3"
+                                  ></span>
+                                </div>
+            
+                                <div class="flex flex-1 items-center justify-between">
+                                  <div>
+                                    <h5 class="font-medium">Henry Fisher</h5>
+                                    <p>
+                                      <span class="text-sm font-medium"
+                                        >I am waiting for you</span
+                                      >
+                                      <span class="text-xs"> . 5:54 PM</span>
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                              <a
+                                href="messages.html"
+                                class="flex items-center gap-5 py-3 px-7.5 hover:bg-gray-3 dark:hover:bg-meta-4"
+                              >
+                                <div class="relative h-14 w-14 rounded-full">
+                                  <img src="assets/src/images/user/user-05.png" alt="User" />
+                                  <span
+                                    class="absolute right-0 bottom-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-meta-6"
+                                  ></span>
+                                </div>
+            
+                                <div class="flex flex-1 items-center justify-between">
+                                  <div>
+                                    <h5 class="font-medium">Wilium Smith</h5>
+                                    <p>
+                                      <span class="text-sm font-medium"
+                                        >Where are you now?</span
+                                      >
+                                      <span class="text-xs"> . 10:12 PM</span>
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                              <a
+                                href="messages.html"
+                                class="flex items-center gap-5 py-3 px-7.5 hover:bg-gray-3 dark:hover:bg-meta-4"
+                              >
+                                <div class="relative h-14 w-14 rounded-full">
+                                  <img src="assets/src/images/user/user-01.png" alt="User" />
+                                  <span
+                                    class="absolute right-0 bottom-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-meta-3"
+                                  ></span>
+                                </div>
+            
+                                <div class="flex flex-1 items-center justify-between">
+                                  <div>
+                                    <h5 class="font-medium text-black dark:text-white">
+                                      Henry Deco
+                                    </h5>
+                                    <p>
+                                      <span
+                                        class="text-sm font-medium text-black dark:text-white"
+                                        >Thank you so much!</span
+                                      >
+                                      <span class="text-xs"> . Sun</span>
+                                    </p>
+                                  </div>
+                                  <div
+                                    class="flex h-6 w-6 items-center justify-center rounded-full bg-primary"
+                                  >
+                                    <span class="text-sm font-medium text-white">2</span>
+                                  </div>
+                                </div>
+                              </a>
+                              <a
+                                href="messages.html"
+                                class="flex items-center gap-5 py-3 px-7.5 hover:bg-gray-3 dark:hover:bg-meta-4"
+                              >
+                                <div class="relative h-14 w-14 rounded-full">
+                                  <img src="assets/src/images/user/user-02.png" alt="User" />
+                                  <span
+                                    class="absolute right-0 bottom-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-meta-7"
+                                  ></span>
+                                </div>
+            
+                                <div class="flex flex-1 items-center justify-between">
+                                  <div>
+                                    <h5 class="font-medium">Jubin Jack</h5>
+                                    <p>
+                                      <span class="text-sm font-medium"
+                                        >I really love that!</span
+                                      >
+                                      <span class="text-xs"> . Oct 23</span>
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                              <a
+                                href="messages.html"
+                                class="flex items-center gap-5 py-3 px-7.5 hover:bg-gray-3 dark:hover:bg-meta-4"
+                              >
+                                <div class="relative h-14 w-14 rounded-full">
+                                  <img src="assets/src/images/user/user-05.png" alt="User" />
+                                  <span
+                                    class="absolute right-0 bottom-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-meta-6"
+                                  ></span>
+                                </div>
+            
+                                <div class="flex flex-1 items-center justify-between">
+                                  <div>
+                                    <h5 class="font-medium">Wilium Smith</h5>
+                                    <p>
+                                      <span class="text-sm font-medium"
+                                        >Where are you now?</span
+                                      >
+                                      <span class="text-xs"> . Sep 20</span>
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
                             </div>
                           </div>
-
-                          <div class="w-full sm:w-1/2">
-                            <label
-                              class="mb-3 block text-sm font-medium text-black dark:text-white"
-                              for="phoneNumber"
-                              >Phone Number</label
-                            >
-                            <input
-                              class="w-full rounded border border-stroke bg-gray py-3 px-4.5 font-medium text-black focus:border-primary focus-visible:outline-none dark:border-strokedark dark:bg-meta-4 dark:text-white dark:focus:border-primary"
-                              type="text"
-                              name="phoneNumber"
-                              id="phoneNumber"
-                              placeholder="+55 11 94002-8922"
-                              value="+55 11 94002-8922"
-                            />
+                          <!-- ====== Chat Card End -->
+                            <!-- ====== Chart Three Start -->
+                            <div
+                            class="col-span-12 rounded-sm border border-stroke bg-white px-5 pt-7.5 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:col-span-5"
+                          >
+                            <div class="mb-3 justify-between gap-4 sm:flex">
+                              <div>
+                                <h4 class="text-xl font-bold text-black dark:text-white">
+                                  Visitors Analytics
+                                </h4>
+                              </div>
+                              <div>
+                                <div class="relative z-20 inline-block">
+                                  <select
+                                    name=""
+                                    id=""
+                                    class="relative z-20 inline-flex appearance-none bg-transparent py-1 pl-3 pr-8 text-sm font-medium outline-none"
+                                  >
+                                    <option value="">Monthly</option>
+                                    <option value="">Yearly</option>
+                                  </select>
+                                  <span class="absolute top-1/2 right-3 z-10 -translate-y-1/2">
+                                    <svg
+                                      width="10"
+                                      height="6"
+                                      viewBox="0 0 10 6"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M0.47072 1.08816C0.47072 1.02932 0.500141 0.955772 0.54427 0.911642C0.647241 0.808672 0.809051 0.808672 0.912022 0.896932L4.85431 4.60386C4.92785 4.67741 5.06025 4.67741 5.14851 4.60386L9.09079 0.896932C9.19376 0.793962 9.35557 0.808672 9.45854 0.911642C9.56151 1.01461 9.5468 1.17642 9.44383 1.27939L5.50155 4.98632C5.22206 5.23639 4.78076 5.23639 4.51598 4.98632L0.558981 1.27939C0.50014 1.22055 0.47072 1.16171 0.47072 1.08816Z"
+                                        fill="#637381"
+                                      />
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M1.22659 0.546578L5.00141 4.09604L8.76422 0.557869C9.08459 0.244537 9.54201 0.329403 9.79139 0.578788C10.112 0.899434 10.0277 1.36122 9.77668 1.61224L9.76644 1.62248L5.81552 5.33722C5.36257 5.74249 4.6445 5.7544 4.19352 5.32924C4.19327 5.32901 4.19377 5.32948 4.19352 5.32924L0.225953 1.61241C0.102762 1.48922 -4.20186e-08 1.31674 -3.20269e-08 1.08816C-2.40601e-08 0.905899 0.0780105 0.712197 0.211421 0.578787C0.494701 0.295506 0.935574 0.297138 1.21836 0.539529L1.22659 0.546578ZM4.51598 4.98632C4.78076 5.23639 5.22206 5.23639 5.50155 4.98632L9.44383 1.27939C9.5468 1.17642 9.56151 1.01461 9.45854 0.911642C9.35557 0.808672 9.19376 0.793962 9.09079 0.896932L5.14851 4.60386C5.06025 4.67741 4.92785 4.67741 4.85431 4.60386L0.912022 0.896932C0.809051 0.808672 0.647241 0.808672 0.54427 0.911642C0.500141 0.955772 0.47072 1.02932 0.47072 1.08816C0.47072 1.16171 0.50014 1.22055 0.558981 1.27939L4.51598 4.98632Z"
+                                        fill="#637381"
+                                      />
+                                    </svg>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-2">
+                              <div id="chartThree" class="mx-auto flex justify-center"></div>
+                            </div>
+                            <div class="-mx-8 flex flex-wrap items-center justify-center gap-y-3">
+                              <div class="w-full px-8 sm:w-1/2">
+                                <div class="flex w-full items-center">
+                                  <span
+                                    class="mr-2 block h-3 w-full max-w-3 rounded-full bg-primary"
+                                  ></span>
+                                  <p
+                                    class="flex w-full justify-between text-sm font-medium text-black dark:text-white"
+                                  >
+                                    <span> Desktop </span>
+                                    <span> 65% </span>
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="w-full px-8 sm:w-1/2">
+                                <div class="flex w-full items-center">
+                                  <span
+                                    class="mr-2 block h-3 w-full max-w-3 rounded-full bg-[#6577F3]"
+                                  ></span>
+                                  <p
+                                    class="flex w-full justify-between text-sm font-medium text-black dark:text-white"
+                                  >
+                                    <span> Tablet </span>
+                                    <span> 34% </span>
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="w-full px-8 sm:w-1/2">
+                                <div class="flex w-full items-center">
+                                  <span
+                                    class="mr-2 block h-3 w-full max-w-3 rounded-full bg-[#8FD0EF]"
+                                  ></span>
+                                  <p
+                                    class="flex w-full justify-between text-sm font-medium text-black dark:text-white"
+                                  >
+                                    <span> Mobile </span>
+                                    <span> 45% </span>
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="w-full px-8 sm:w-1/2">
+                                <div class="flex w-full items-center">
+                                  <span
+                                    class="mr-2 block h-3 w-full max-w-3 rounded-full bg-[#0FADCF]"
+                                  ></span>
+                                  <p
+                                    class="flex w-full justify-between text-sm font-medium text-black dark:text-white"
+                                  >
+                                    <span> Unknown </span>
+                                    <span> 12% </span>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-
-                        <div class="mb-5.5">
-                          <label
-                            class="mb-3 block text-sm font-medium text-black dark:text-white"
-                            for="emailAddress"
-                            >Email Address</label
-                          >
-                          <div class="relative">
-                            <span class="absolute left-4.5 top-4">
-                              <svg
-                                class="fill-current"
-                                width="20"
-                                height="20"
-                                viewBox="0 0 20 20"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <g opacity="0.8">
-                                  <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M3.33301 4.16667C2.87658 4.16667 2.49967 4.54357 2.49967 5V15C2.49967 15.4564 2.87658 15.8333 3.33301 15.8333H16.6663C17.1228 15.8333 17.4997 15.4564 17.4997 15V5C17.4997 4.54357 17.1228 4.16667 16.6663 4.16667H3.33301ZM0.833008 5C0.833008 3.6231 1.9561 2.5 3.33301 2.5H16.6663C18.0432 2.5 19.1663 3.6231 19.1663 5V15C19.1663 16.3769 18.0432 17.5 16.6663 17.5H3.33301C1.9561 17.5 0.833008 16.3769 0.833008 15V5Z"
-                                    fill=""
-                                  />
-                                  <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M0.983719 4.52215C1.24765 4.1451 1.76726 4.05341 2.1443 4.31734L9.99975 9.81615L17.8552 4.31734C18.2322 4.05341 18.7518 4.1451 19.0158 4.52215C19.2797 4.89919 19.188 5.4188 18.811 5.68272L10.4776 11.5161C10.1907 11.7169 9.80879 11.7169 9.52186 11.5161L1.18853 5.68272C0.811486 5.4188 0.719791 4.89919 0.983719 4.52215Z"
-                                    fill=""
-                                  />
-                                </g>
-                              </svg>
-                            </span>
-                            <input
-                              class="w-full rounded border border-stroke bg-gray py-3 pl-11.5 pr-4.5 font-medium text-black focus:border-primary focus-visible:outline-none dark:border-strokedark dark:bg-meta-4 dark:text-white dark:focus:border-primary"
-                              type="email"
-                              name="emailAddress"
-                              id="emailAddress"
-                              placeholder="novoadm@gmail.com"
-                              value="novoadm@gmail.com"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="mb-5.5">
-                          <label
-                            class="mb-3 block text-sm font-medium text-black dark:text-white"
-                            for="Username"
-                            >Username</label
-                          >
-                          <input
-                            class="w-full rounded border border-stroke bg-gray py-3 px-4.5 font-medium text-black focus:border-primary focus-visible:outline-none dark:border-strokedark dark:bg-meta-4 dark:text-white dark:focus:border-primary"
-                            type="text"
-                            name="Username"
-                            id="Username"
-                            placeholder="username"
-                            value="username"
-                          />
-                        </div>
-
-                        <div class="mb-5.5">
-                          <label
-                            class="mb-3 block text-sm font-medium text-black dark:text-white"
-                            for="Username"
-                            >BIO</label
-                          >
-                          <div class="relative">
-                            <span class="absolute left-4.5 top-4">
-                              <svg
-                                class="fill-current"
-                                width="20"
-                                height="20"
-                                viewBox="0 0 20 20"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <g
-                                  opacity="0.8"
-                                  clip-path="url(#clip0_88_10224)"
-                                >
-                                  <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M1.56524 3.23223C2.03408 2.76339 2.66997 2.5 3.33301 2.5H9.16634C9.62658 2.5 9.99967 2.8731 9.99967 3.33333C9.99967 3.79357 9.62658 4.16667 9.16634 4.16667H3.33301C3.11199 4.16667 2.90003 4.25446 2.74375 4.41074C2.58747 4.56702 2.49967 4.77899 2.49967 5V16.6667C2.49967 16.8877 2.58747 17.0996 2.74375 17.2559C2.90003 17.4122 3.11199 17.5 3.33301 17.5H14.9997C15.2207 17.5 15.4326 17.4122 15.5889 17.2559C15.7452 17.0996 15.833 16.8877 15.833 16.6667V10.8333C15.833 10.3731 16.2061 10 16.6663 10C17.1266 10 17.4997 10.3731 17.4997 10.8333V16.6667C17.4997 17.3297 17.2363 17.9656 16.7674 18.4344C16.2986 18.9033 15.6627 19.1667 14.9997 19.1667H3.33301C2.66997 19.1667 2.03408 18.9033 1.56524 18.4344C1.0964 17.9656 0.833008 17.3297 0.833008 16.6667V5C0.833008 4.33696 1.0964 3.70107 1.56524 3.23223Z"
-                                    fill=""
-                                  />
-                                  <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M16.6664 2.39884C16.4185 2.39884 16.1809 2.49729 16.0056 2.67253L8.25216 10.426L7.81167 12.188L9.57365 11.7475L17.3271 3.99402C17.5023 3.81878 17.6008 3.5811 17.6008 3.33328C17.6008 3.08545 17.5023 2.84777 17.3271 2.67253C17.1519 2.49729 16.9142 2.39884 16.6664 2.39884ZM14.8271 1.49402C15.3149 1.00622 15.9765 0.732178 16.6664 0.732178C17.3562 0.732178 18.0178 1.00622 18.5056 1.49402C18.9934 1.98182 19.2675 2.64342 19.2675 3.33328C19.2675 4.02313 18.9934 4.68473 18.5056 5.17253L10.5889 13.0892C10.4821 13.196 10.3483 13.2718 10.2018 13.3084L6.86847 14.1417C6.58449 14.2127 6.28409 14.1295 6.0771 13.9225C5.87012 13.7156 5.78691 13.4151 5.85791 13.1312L6.69124 9.79783C6.72787 9.65131 6.80364 9.51749 6.91044 9.41069L14.8271 1.49402Z"
-                                    fill=""
-                                  />
-                                </g>
-                                <defs>
-                                  <clipPath id="clip0_88_10224">
-                                    <rect width="20" height="20" fill="white" />
-                                  </clipPath>
-                                </defs>
-                              </svg>
-                            </span>
-
-                            <textarea
-                              class="w-full rounded border border-stroke bg-gray py-3 pl-11.5 pr-4.5 font-medium text-black focus:border-primary focus-visible:outline-none dark:border-strokedark dark:bg-meta-4 dark:text-white dark:focus:border-primary"
-                              name="bio"
-                              id="bio"
-                              rows="6"
-                              placeholder="Write your bio here"
-                            >
-Faça biografia para o novo admin
-                              </textarea
-                            >
-                          </div>
-                        </div>
-
-                        <div class="flex justify-end gap-4.5">
-                          <button
-                            class="flex justify-center rounded border border-stroke py-2 px-6 font-medium text-black hover:shadow-1 dark:border-strokedark dark:text-white"
-                            type="submit"
-                          >
-                            Cancel
-                          </button>
-                          <button
-                            class="flex justify-center rounded bg-primary py-2 px-6 font-medium text-gray hover:bg-opacity-90"
-                            type="submit"
-                          >
-                            Save
-                          </button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-5 xl:col-span-2">
-                  <div
-                    class="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark"
-                  >
-                    <div
-                      class="border-b border-stroke py-4 px-7 dark:border-strokedark"
-                    >
-                      <h3 class="font-medium text-black dark:text-white">
-                        Novo Usuário
-                      </h3>
-                    </div>
-                    <div class="p-7">
-                      <form action="settings.html#">
-                        <div class="mb-4 flex items-center gap-3">
-                          <div class="h-14 w-14 rounded-full">
-                            <img src="src/images/user/user-06.png" alt="User" />
-                          </div>
-                          <div>
-                            <span
-                              class="mb-1.5 font-medium text-black dark:text-white"
-                              >Editar foto do usuário</span
-                            >
-                            <span class="flex gap-2.5">
-                              <button
-                                class="text-sm font-medium hover:text-primary"
-                              >
-                                Delete
-                              </button>
-                              <button
-                                class="text-sm font-medium hover:text-primary"
-                              >
-                                Update
-                              </button>
-                            </span>
-                          </div>
-                        </div>
-
-                        <div
-                          id="FileUpload"
-                          class="relative mb-5.5 block w-full cursor-pointer appearance-none rounded border-2 border-dashed border-primary bg-gray py-4 px-4 dark:bg-meta-4 sm:py-7.5"
-                        >
-                          <input
-                            type="file"
-                            accept="image/*"
-                            class="absolute inset-0 z-50 m-0 h-full w-full cursor-pointer p-0 opacity-0 outline-none"
-                          />
-                          <div
-                            class="flex flex-col items-center justify-center space-y-3"
-                          >
-                            <span
-                              class="flex h-10 w-10 items-center justify-center rounded-full border border-stroke bg-white dark:border-strokedark dark:bg-boxdark"
-                            >
-                              <svg
-                                width="16"
-                                height="16"
-                                viewBox="0 0 16 16"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  fill-rule="evenodd"
-                                  clip-rule="evenodd"
-                                  d="M1.99967 9.33337C2.36786 9.33337 2.66634 9.63185 2.66634 10V12.6667C2.66634 12.8435 2.73658 13.0131 2.8616 13.1381C2.98663 13.2631 3.1562 13.3334 3.33301 13.3334H12.6663C12.8431 13.3334 13.0127 13.2631 13.1377 13.1381C13.2628 13.0131 13.333 12.8435 13.333 12.6667V10C13.333 9.63185 13.6315 9.33337 13.9997 9.33337C14.3679 9.33337 14.6663 9.63185 14.6663 10V12.6667C14.6663 13.1971 14.4556 13.7058 14.0806 14.0809C13.7055 14.456 13.1968 14.6667 12.6663 14.6667H3.33301C2.80257 14.6667 2.29387 14.456 1.91879 14.0809C1.54372 13.7058 1.33301 13.1971 1.33301 12.6667V10C1.33301 9.63185 1.63148 9.33337 1.99967 9.33337Z"
-                                  fill="#3C50E0"
-                                />
-                                <path
-                                  fill-rule="evenodd"
-                                  clip-rule="evenodd"
-                                  d="M7.5286 1.52864C7.78894 1.26829 8.21106 1.26829 8.4714 1.52864L11.8047 4.86197C12.0651 5.12232 12.0651 5.54443 11.8047 5.80478C11.5444 6.06513 11.1223 6.06513 10.8619 5.80478L8 2.94285L5.13807 5.80478C4.87772 6.06513 4.45561 6.06513 4.19526 5.80478C3.93491 5.54443 3.93491 5.12232 4.19526 4.86197L7.5286 1.52864Z"
-                                  fill="#3C50E0"
-                                />
-                                <path
-                                  fill-rule="evenodd"
-                                  clip-rule="evenodd"
-                                  d="M7.99967 1.33337C8.36786 1.33337 8.66634 1.63185 8.66634 2.00004V10C8.66634 10.3682 8.36786 10.6667 7.99967 10.6667C7.63148 10.6667 7.33301 10.3682 7.33301 10V2.00004C7.33301 1.63185 7.63148 1.33337 7.99967 1.33337Z"
-                                  fill="#3C50E0"
-                                />
-                              </svg>
-                            </span>
-                            <p class="text-sm font-medium">
-                              <span class="text-primary">Click to upload</span>
-                              or drag and drop
-                            </p>
-                            <p class="mt-1.5 text-sm font-medium">
-                              SVG, PNG, JPG or GIF
-                            </p>
-                            <p class="text-sm font-medium">
-                              (max, 800 X 800px)
-                            </p>
-                          </div>
-                        </div>
-
-                        <div class="flex justify-end gap-4.5">
-                          <button
-                            class="flex justify-center rounded border border-stroke py-2 px-6 font-medium text-black hover:shadow-1 dark:border-strokedark dark:text-white"
-                            type="submit"
-                          >
-                            Cancel
-                          </button>
-                          <button
-                            class="flex justify-center rounded bg-primary py-2 px-6 font-medium text-gray hover:bg-opacity-90"
-                            type="submit"
-                          >
-                            Save
-                          </button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ====== Settings Section End -->
+                          
+                                        <!-- ====== Chart Three End -->
             </div>
           </div>
         </main>
@@ -2130,6 +2600,6 @@ Faça biografia para o novo admin
       <!-- ===== Content Area End ===== -->
     </div>
     <!-- ===== Page Wrapper End ===== -->
-  <script defer src="bundle.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7cb1b64dd8240156","version":"2023.4.0","r":1,"b":1,"token":"67f7a278e3374824ae6dd92295d38f77","si":100}' crossorigin="anonymous"></script>
+  <script defer src="assets/bundle.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7cb1b62a084b0156","version":"2023.4.0","r":1,"b":1,"token":"67f7a278e3374824ae6dd92295d38f77","si":100}' crossorigin="anonymous"></script>
 </body>
 </html>
