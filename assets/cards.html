@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cards | TailAdmin - Tailwind CSS Admin Dashboard Template</title>
+    <title>Cards | ForTech Jobs</title>
   <link rel="icon" href="logo.ico"><link href="style.css" rel="stylesheet"></head>
 
   <body
@@ -451,231 +451,167 @@
               </svg>
             </a>
 
-            <!-- Dropdown Menu Start -->
-            <div
-              class="translate transform overflow-hidden"
-              :class="(selected === 'UiElements') ? 'block' :'hidden'"
-            >
-              <ul class="mt-4 mb-3 flex flex-col gap-2 pl-6">
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="form-elements.html"
-                    :class="page === 'alerts' && '!text-white'"
-                    >Elementos do Usuário</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="alerts.html"
-                    :class="page === 'alerts' && '!text-white'"
-                    >Alerts</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="buttons.html"
-                    :class="page === 'buttons' && '!text-white'"
-                    >Buttons</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="buttons-group.html"
-                    :class="page === 'buttonsGroup' && '!text-white'"
-                    >Buttons Group
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="badge.html"
-                    :class="page === 'badge' && '!text-white'"
-                    >Badge
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="breadcrumb.html"
-                    :class="page === 'breadcrumb' && '!text-white'"
-                    >Breadcrumb
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="cards.html"
-                    :class="page === 'card' && '!text-white'"
-                    >Cards
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="dropdowns.html"
-                    :class="page === 'dropdowns' && '!text-white'"
-                    >Dropdowns
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="modals.html"
-                    :class="page === 'Modals' && '!text-white'"
-                    >Modals
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="tabs.html"
-                    :class="page === 'tabs' && '!text-white'"
-                    >Tabs
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="tooltips.html"
-                    :class="page === 'tooltips' && '!text-white'"
-                    >Tooltips
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="popovers.html"
-                    :class="page === 'popovers' && '!text-white'"
-                    >Popovers
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="accordion.html"
-                    :class="page === 'accordion' && '!text-white'"
-                    >Accordion
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="notifications.html"
-                    :class="page === 'notifications' && '!text-white'"
-                    >Notifications
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="pagination.html"
-                    :class="page === 'pagination' && '!text-white'"
-                    >Pagination
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="progress.html"
-                    :class="page === 'progress' && '!text-white'"
-                    >Progress
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="carousel.html"
-                    :class="page === 'carousel' && '!text-white'"
-                    >Carousel
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="images.html"
-                    :class="page === 'images' && '!text-white'"
-                    >Images
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="videos.html"
-                    :class="page === 'videos' && '!text-white'"
-                    >Videos
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-              </ul>
-            </div>
-            <!-- Dropdown Menu End -->
+<!-- Dropdown Menu Start -->
+<div
+  class="translate transform overflow-hidden"
+  :class="(selected === 'UiElements') ? 'block' :'hidden'"
+>
+  <ul class="mt-4 mb-3 flex flex-col gap-2 pl-6">
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="form-elements.html"
+        :class="page === 'alerts' && '!text-white'"
+        >Elementos do Usuário</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="alerts.html"
+        :class="page === 'alerts' && '!text-white'"
+        >Alerts</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="buttons.html"
+        :class="page === 'buttons' && '!text-white'"
+        >Buttons</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="buttons-group.html"
+        :class="page === 'buttonsGroup' && '!text-white'"
+        >Buttons Group</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="badge.html"
+        :class="page === 'badge' && '!text-white'"
+        >Badge</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="breadcrumb.html"
+        :class="page === 'breadcrumb' && '!text-white'"
+        >Breadcrumb</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="cards.html"
+        :class="page === 'card' && '!text-white'"
+        >Cards</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="dropdowns.html"
+        :class="page === 'dropdowns' && '!text-white'"
+        >Dropdowns</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="modals.html"
+        :class="page === 'Modals' && '!text-white'"
+        >Modals</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="tabs.html"
+        :class="page === 'tabs' && '!text-white'"
+        >Tabs</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="tooltips.html"
+        :class="page === 'tooltips' && '!text-white'"
+        >Tooltips</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="popovers.html"
+        :class="page === 'popovers' && '!text-white'"
+        >Popovers</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="accordion.html"
+        :class="page === 'accordion' && '!text-white'"
+        >Accordion</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="notifications.html"
+        :class="page === 'notifications' && '!text-white'"
+        >Notifications</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="pagination.html"
+        :class="page === 'pagination' && '!text-white'"
+        >Pagination</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="progress.html"
+        :class="page === 'progress' && '!text-white'"
+        >Progress</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="carousel.html"
+        :class="page === 'carousel' && '!text-white'"
+        >Carousel</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="images.html"
+        :class="page === 'images' && '!text-white'"
+        >Images</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="videos.html"
+        :class="page === 'videos' && '!text-white'"
+        >Videos</a
+      >
+    </li>
+  </ul>
+</div>
+<!-- Dropdown Menu End -->
           </li>
           <!-- Menu Item Ui Elements -->
           <!-- Menu Item Auth Pages -->
