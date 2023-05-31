@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Data Tables | TailAdmin - Tailwind CSS Admin Dashboard Template
+      Tabelas de dados | Administrador - Administrador CSS Admin Painel Template
     </title>
   <link rel="icon" href="logo.ico"><link href="style.css" rel="stylesheet"></head>
 
@@ -453,231 +453,167 @@
               </svg>
             </a>
 
-            <!-- Dropdown Menu Start -->
-            <div
-              class="translate transform overflow-hidden"
-              :class="(selected === 'UiElements') ? 'block' :'hidden'"
-            >
-              <ul class="mt-4 mb-3 flex flex-col gap-2 pl-6">
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="form-elements.html"
-                    :class="page === 'alerts' && '!text-white'"
-                    >Elementos do Usuário</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="alerts.html"
-                    :class="page === 'alerts' && '!text-white'"
-                    >Alerts</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="buttons.html"
-                    :class="page === 'buttons' && '!text-white'"
-                    >Buttons</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="buttons-group.html"
-                    :class="page === 'buttonsGroup' && '!text-white'"
-                    >Buttons Group
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="badge.html"
-                    :class="page === 'badge' && '!text-white'"
-                    >Badge
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="breadcrumb.html"
-                    :class="page === 'breadcrumb' && '!text-white'"
-                    >Breadcrumb
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="cards.html"
-                    :class="page === 'card' && '!text-white'"
-                    >Cards
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="dropdowns.html"
-                    :class="page === 'dropdowns' && '!text-white'"
-                    >Dropdowns
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="modals.html"
-                    :class="page === 'Modals' && '!text-white'"
-                    >Modals
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="tabs.html"
-                    :class="page === 'tabs' && '!text-white'"
-                    >Tabs
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="tooltips.html"
-                    :class="page === 'tooltips' && '!text-white'"
-                    >Tooltips
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="popovers.html"
-                    :class="page === 'popovers' && '!text-white'"
-                    >Popovers
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="accordion.html"
-                    :class="page === 'accordion' && '!text-white'"
-                    >Accordion
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="notifications.html"
-                    :class="page === 'notifications' && '!text-white'"
-                    >Notifications
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="pagination.html"
-                    :class="page === 'pagination' && '!text-white'"
-                    >Pagination
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="progress.html"
-                    :class="page === 'progress' && '!text-white'"
-                    >Progress
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="carousel.html"
-                    :class="page === 'carousel' && '!text-white'"
-                    >Carousel
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="images.html"
-                    :class="page === 'images' && '!text-white'"
-                    >Images
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="videos.html"
-                    :class="page === 'videos' && '!text-white'"
-                    >Videos
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-              </ul>
-            </div>
-            <!-- Dropdown Menu End -->
+<!-- Dropdown Menu Start -->
+<div
+  class="translate transform overflow-hidden"
+  :class="(selected === 'UiElements') ? 'block' :'hidden'"
+>
+  <ul class="mt-4 mb-3 flex flex-col gap-2 pl-6">
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/form-elements.html"
+        :class="page === 'alerts' && '!text-white'"
+        >Elementos do Usuário</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/alerts.html"
+        :class="page === 'alerts' && '!text-white'"
+        >Alerts</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/buttons.html"
+        :class="page === 'buttons' && '!text-white'"
+        >Buttons</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/buttons-group.html"
+        :class="page === 'buttonsGroup' && '!text-white'"
+        >Buttons Group</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/badge.html"
+        :class="page === 'badge' && '!text-white'"
+        >Badge</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/breadcrumb.html"
+        :class="page === 'breadcrumb' && '!text-white'"
+        >Breadcrumb</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/cards.html"
+        :class="page === 'card' && '!text-white'"
+        >Cards</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/dropdowns.html"
+        :class="page === 'dropdowns' && '!text-white'"
+        >Dropdowns</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/modals.html"
+        :class="page === 'Modals' && '!text-white'"
+        >Modals</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/tabs.html"
+        :class="page === 'tabs' && '!text-white'"
+        >Tabs</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/tooltips.html"
+        :class="page === 'tooltips' && '!text-white'"
+        >Tooltips</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/popovers.html"
+        :class="page === 'popovers' && '!text-white'"
+        >Popovers</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/accordion.html"
+        :class="page === 'accordion' && '!text-white'"
+        >Accordion</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/notifications.html"
+        :class="page === 'notifications' && '!text-white'"
+        >Notifications</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/pagination.html"
+        :class="page === 'pagination' && '!text-white'"
+        >Pagination</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/progress.html"
+        :class="page === 'progress' && '!text-white'"
+        >Progress</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/carousel.html"
+        :class="page === 'carousel' && '!text-white'"
+        >Carousel</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/images.html"
+        :class="page === 'images' && '!text-white'"
+        >Images</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/videos.html"
+        :class="page === 'videos' && '!text-white'"
+        >Videos</a
+      >
+    </li>
+  </ul>
+</div>
+<!-- Dropdown Menu End -->
           </li>
           <!-- Menu Item Ui Elements -->
           <!-- Menu Item Auth Pages -->
@@ -785,7 +721,7 @@
 
           <input
             type="text"
-            placeholder="Type to search..."
+            placeholder="Pesquisar..."
             class="w-full xl:w-125 bg-transparent pr-4 pl-9 focus:outline-none"
           />
         </div>
@@ -899,13 +835,12 @@
                 >
                   <p class="text-sm">
                     <span class="text-black dark:text-white"
-                      >Edit your information in a swipe</span
+                      >Edite suas informações em um toque</span
                     >
-                    Sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim.
+                    Atualização em andamento.
                   </p>
 
-                  <p class="text-xs">12 May, 2025</p>
+                  <p class="text-xs">12 Maio, 2023</p>
                 </a>
               </li>
               <li>
@@ -915,12 +850,12 @@
                 >
                   <p class="text-sm">
                     <span class="text-black dark:text-white"
-                      >It is a long established fact</span
+                      >É um fato há muito estabelecido</span
                     >
-                    that a reader will be distracted by the readable.
+                    Que um leitor será distraído pelo legível.
                   </p>
 
-                  <p class="text-xs">24 Feb, 2025</p>
+                  <p class="text-xs">24 Fev, 2023</p>
                 </a>
               </li>
               <li>
@@ -930,13 +865,11 @@
                 >
                   <p class="text-sm">
                     <span class="text-black dark:text-white"
-                      >There are many variations</span
+                      >Existem muitas variações</span
                     >
-                    of passages of Lorem Ipsum available, but the majority have
-                    suffered
                   </p>
 
-                  <p class="text-xs">04 Jan, 2025</p>
+                  <p class="text-xs">04 Jan, 2023</p>
                 </a>
               </li>
               <li>
@@ -946,13 +879,11 @@
                 >
                   <p class="text-sm">
                     <span class="text-black dark:text-white"
-                      >There are many variations</span
+                      >Existem muitas variações</span
                     >
-                    of passages of Lorem Ipsum available, but the majority have
-                    suffered
                   </p>
 
-                  <p class="text-xs">01 Dec, 2024</p>
+                  <p class="text-xs">01 Dez, 2023</p>
                 </a>
               </li>
             </ul>
@@ -1029,10 +960,10 @@
 
                   <div>
                     <h6 class="text-sm font-medium text-black dark:text-white">
-                      Mariya Desoja
+                      Maria
                     </h6>
-                    <p class="text-sm">I like your confidence 💪</p>
-                    <p class="text-xs">2min ago</p>
+                    <p class="text-sm">Eu gosto da sua confiança💪</p>
+                    <p class="text-xs">2min atrás</p>
                   </div>
                 </a>
               </li>
@@ -1047,10 +978,10 @@
 
                   <div>
                     <h6 class="text-sm font-medium text-black dark:text-white">
-                      Robert Jhon
+                      Roberto
                     </h6>
-                    <p class="text-sm">Can you share your offer?</p>
-                    <p class="text-xs">10min ago</p>
+                    <p class="text-sm">Você pode compartilhar sua oferta?</p>
+                    <p class="text-xs">10min atrás</p>
                   </div>
                 </a>
               </li>
@@ -1065,10 +996,10 @@
 
                   <div>
                     <h6 class="text-sm font-medium text-black dark:text-white">
-                      Henry Dholi
+                      Henrique Dourado
                     </h6>
-                    <p class="text-sm">I cam across your profile and...</p>
-                    <p class="text-xs">1day ago</p>
+                    <p class="text-sm">Claro, amanhã estará pronto...</p>
+                    <p class="text-xs">1 dia atrás</p>
                   </div>
                 </a>
               </li>
@@ -1083,10 +1014,10 @@
 
                   <div>
                     <h6 class="text-sm font-medium text-black dark:text-white">
-                      Cody Fisher
+                      Carlos Fernando
                     </h6>
-                    <p class="text-sm">I’m waiting for you response!</p>
-                    <p class="text-xs">5days ago</p>
+                    <p class="text-sm">aguardo sua resposta!</p>
+                    <p class="text-xs">5 dias atrás</p>
                   </div>
                 </a>
               </li>
@@ -1101,10 +1032,10 @@
 
                   <div>
                     <h6 class="text-sm font-medium text-black dark:text-white">
-                      Mariya Desoja
+                      Maria
                     </h6>
-                    <p class="text-sm">I like your confidence 💪</p>
-                    <p class="text-xs">2min ago</p>
+                    <p class="text-sm">Ontem mesmo</p>
+                    <p class="text-xs">5 dias atrás</p>
                   </div>
                 </a>
               </li>
@@ -1128,9 +1059,9 @@
         >
           <span class="hidden text-right lg:block">
             <span class="block text-sm font-medium text-black dark:text-white"
-              >Thomas Anree</span
+              >Administrador</span
             >
-            <span class="block text-xs font-medium">UX Designer</span>
+            <span class="block text-xs font-medium">Geral</span>
           </span>
 
           <span class="h-12 w-12 rounded-full">
@@ -1185,7 +1116,7 @@
                     fill=""
                   />
                 </svg>
-                My Profile
+                Meu Perfil
               </a>
             </li>
             <li>
@@ -1206,7 +1137,7 @@
                     fill=""
                   />
                 </svg>
-                My Contacts
+                Meu Contato
               </a>
             </li>
             <li>
@@ -1231,7 +1162,7 @@
                     fill=""
                   />
                 </svg>
-                Account Settings
+                Configurações da Conta
               </a>
             </li>
           </ul>
@@ -1255,7 +1186,7 @@
                 fill=""
               />
             </svg>
-            Log Out
+            Sair 
           </button>
         </div>
         <!-- Dropdown End -->
@@ -1275,15 +1206,15 @@
               class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
             >
               <h2 class="text-title-md2 font-bold text-black dark:text-white">
-                Data Tables
+                Tabela de Dados
               </h2>
 
               <nav>
                 <ol class="flex items-center gap-2">
                   <li>
-                    <a class="font-medium" href="index.html">Dashboard /</a>
+                    <a class="font-medium" href="index.html">Painel /</a>
                   </li>
-                  <li class="font-medium text-primary">Data Tables</li>
+                  <li class="font-medium text-primary">Tabela de Dados</li>
                 </ol>
               </nav>
             </div>
@@ -1298,7 +1229,7 @@
                       <tr>
                         <th>
                           <div class="flex items-center gap-1.5">
-                            <p>Name/ID</p>
+                            <p>Nome/ID</p>
                             <div class="inline-flex flex-col space-y-[2px]">
                               <span class="inline-block">
                                 <svg class="fill-current" width="10" height="5" viewBox="0 0 10 5" fill="none"
@@ -1317,7 +1248,7 @@
                         </th>
                         <th>
                           <div class="flex items-center gap-1.5">
-                            <p>Position</p>
+                            <p>Serviço</p>
                             <div class="inline-flex flex-col space-y-[2px]">
                               <span class="inline-block">
                                 <svg class="fill-current" width="10" height="5" viewBox="0 0 10 5" fill="none"
@@ -1336,7 +1267,7 @@
                         </th>
                         <th data-type="date" data-format="YYYY/DD/MM">
                           <div class="flex items-center gap-1.5">
-                            <p>BDay</p>
+                            <p>Data de Nascimento</p>
                             <div class="inline-flex flex-col space-y-[2px]">
                               <span class="inline-block">
                                 <svg class="fill-current" width="10" height="5" viewBox="0 0 10 5" fill="none"
@@ -1355,7 +1286,7 @@
                         </th>
                         <th>
                           <div class="flex items-center gap-1.5">
-                            <p>Email/Phone</p>
+                            <p>Email</p>
                             <div class="inline-flex flex-col space-y-[2px]">
                               <span class="inline-block">
                                 <svg class="fill-current" width="10" height="5" viewBox="0 0 10 5" fill="none"
@@ -1374,7 +1305,7 @@
                         </th>
                         <th>
                           <div class="flex items-center gap-1.5">
-                            <p>Address</p>
+                            <p>Endereço</p>
                             <div class="inline-flex flex-col space-y-[2px]">
                               <span class="inline-block">
                                 <svg class="fill-current" width="10" height="5" viewBox="0 0 10 5" fill="none"
@@ -1414,132 +1345,132 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Andrio Maksim</td>
-                        <td>Designer</td>
-                        <td>25 Nov, 1989</td>
+                        <td>Andre Menezes</td>
+                        <td>Desenvolvedor</td>
+                        <td>20 Nov, 1989</td>
                         <td><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="dfb2beb4acb6b2ebea9fb8b2beb6b3f1bcb0b2">[email&#160;protected]</a></td>
-                        <td>Block A, Demo Park</td>
-                        <td>Full-time</td>
+                        <td>Av. Jabaquara, 1870</td>
+                        <td>Online</td>
                       </tr>
                       <tr>
-                        <td>Brielle Kuphal</td>
-                        <td>Developer</td>
-                        <td>25 Nov, 1977</td>
+                        <td>Bruno Rodrigues</td>
+                        <td>Desenvolvedor</td>
+                        <td>6 Fev, 1977</td>
                         <td><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="e0a29289858c8c85d4d5a0878d81898cce838f8d">[email&#160;protected]</a></td>
-                        <td>Block A, Demo Park</td>
-                        <td>Full-time</td>
+                        <td>Av. Jabaquara, 1870</td>
+                        <td>Online</td>
                       </tr>
                       <tr>
-                        <td>Barney Murray</td>
-                        <td>Designer</td>
-                        <td>25 Nov, 1966</td>
+                        <td>Breno Kassio</td>
+                        <td>Jardineiro</td>
+                        <td>25 Fev, 1966</td>
                         <td><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="216340534f445861464c40484d0f424e4c">[email&#160;protected]</a></td>
-                        <td>Block A, Demo Park</td>
-                        <td>Part-time</td>
+                        <td>Av. Jabaquara, 1870</td>
+                        <td>Online</td>
                       </tr>
                       <tr>
-                        <td>Ressie Ruecker</td>
-                        <td>Designer</td>
-                        <td>25 Nov, 1955</td>
+                        <td>Raquel Rodrigues</td>
+                        <td>Pedreiro</td>
+                        <td>25 Maio, 1955</td>
                         <td><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="83d1e6f0f0eae6c3e4eee2eaefade0ecee">[email&#160;protected]</a></td>
-                        <td>Block A, Demo Park</td>
-                        <td>Full-time</td>
+                        <td>Av. Jabaquara, 1870</td>
+                        <td>Online</td>
                       </tr>
                       <tr>
-                        <td>Teresa Mertz</td>
-                        <td>Designer</td>
-                        <td>25 Nov, 1979</td>
+                        <td>Teresa Messias</td>
+                        <td>Analista</td>
+                        <td>29 Nov, 1979</td>
                         <td><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="6c38091e091f0d2c0b010d0500420f0301">[email&#160;protected]</a></td>
-                        <td>Block A, Demo Park</td>
-                        <td>Part-time</td>
+                        <td>Av. Jabaquara, 1870</td>
+                        <td>Online</td>
                       </tr>
                       <tr>
-                        <td>Chelsey Hackett</td>
-                        <td>Designer</td>
-                        <td>25 Nov, 1969</td>
+                        <td>Carlos Roberto</td>
+                        <td>Eletricista</td>
+                        <td>4 Out, 1969</td>
                         <td><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="a5e6cdc0c9d6c0dce5c2c8c4ccc98bc6cac8">[email&#160;protected]</a></td>
-                        <td>Block A, Demo Park</td>
-                        <td>Full-time</td>
+                        <td>Av. Jabaquara, 1870</td>
+                        <td>Online</td>
                       </tr>
                       <tr>
-                        <td>Tatyana Metz</td>
-                        <td>Designer</td>
-                        <td>25 Nov, 1989</td>
+                        <td>Tatyana Oliveira</td>
+                        <td>Manicure</td>
+                        <td>3 Nov, 1989</td>
                         <td><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="1b4f7a6f627a757a5b7c767a727735787476">[email&#160;protected]</a></td>
-                        <td>Block A, Demo Park</td>
-                        <td>Part-time</td>
+                        <td>Av. Jabaquara, 1870</td>
+                        <td>Online</td>
                       </tr>
                       <tr>
-                        <td>Oleta Harvey</td>
-                        <td>Designer</td>
-                        <td>25 Nov, 1979</td>
+                        <td>Luis Sousa</td>
+                        <td>Soldador</td>
+                        <td>25 Jan, 1979</td>
                         <td><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="216e4d44554061464c40484d0f424e4c">[email&#160;protected]</a></td>
-                        <td>Block A, Demo Park</td>
-                        <td>Full-time</td>
+                        <td>Av. Jabaquara, 1870</td>
+                        <td>Online</td>
                       </tr>
                       <tr>
-                        <td>Bette Haag</td>
-                        <td>Designer</td>
-                        <td>25 Nov, 1979</td>
+                        <td>Benito de Paula</td>
+                        <td>Cantor</td>
+                        <td>25 Jan, 1979</td>
                         <td><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="054760717160456268646c692b666a68">[email&#160;protected]</a></td>
-                        <td>Block A, Demo Park</td>
-                        <td>Part-time</td>
+                        <td>Av. Jabaquara, 1870</td>
+                        <td>Online</td>
                       </tr>
                       <tr>
-                        <td>Meda Ebert</td>
-                        <td>Designer</td>
-                        <td>25 Nov, 1945</td>
+                        <td>Marcos Henrique</td>
+                        <td>Analista de Dados</td>
+                        <td>30 Abril, 1995</td>
                         <td><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="317c54555071565c50585d1f525e5c">[email&#160;protected]</a></td>
-                        <td>Block A, Demo Park</td>
-                        <td>Full-time</td>
+                        <td>Av. Jabaquara, 1870</td>
+                        <td>Online</td>
                       </tr>
                       <tr>
-                        <td>Elissa Stroman</td>
-                        <td>Designer</td>
-                        <td>25 Nov, 1945</td>
+                        <td>Elissa Martineli</td>
+                        <td>Massagista</td>
+                        <td>25 Jun, 1998</td>
                         <td><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="1c5970756f6f7d5c7b717d7570327f7371">[email&#160;protected]</a></td>
-                        <td>Block A, Demo Park</td>
-                        <td>Part-time</td>
+                        <td>Av. Jabaquara, 1870</td>
+                        <td>Online</td>
                       </tr>
                       <tr>
-                        <td>Sid Swaniawski</td>
-                        <td>Designer</td>
-                        <td>25 Nov, 1945</td>
+                        <td>Eduardo Perez</td>
+                        <td>Desenvolvedor</td>
+                        <td>25 Nov, 1998</td>
                         <td><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="bcefd5d8fcdbd1ddd5d092dfd3d1">[email&#160;protected]</a></td>
-                        <td>Block A, Demo Park</td>
-                        <td>Full-time</td>
+                        <td>Av. Jabaquara, 1870</td>
+                        <td>Online</td>
                       </tr>
                       <tr>
-                        <td>Madonna Hahn</td>
-                        <td>Developer</td>
-                        <td>25 Nov, 1945</td>
+                        <td>Marina Sousa</td>
+                        <td>Cuidadora</td>
+                        <td>13 Fev, 2000</td>
                         <td><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="e3ae82878c8d8d82a3848e828a8fcd808c8e">[email&#160;protected]</a></td>
-                        <td>Block A, Demo Park</td>
-                        <td>Part-time</td>
+                        <td>Av. Jabaquara, 1870</td>
+                        <td>Online</td>
                       </tr>
                       <tr>
-                        <td>Waylon Kihn</td>
-                        <td>Developer</td>
-                        <td>25 Nov, 1975</td>
+                        <td>Willian Flores</td>
+                        <td>Eletricista</td>
+                        <td>30 Ago, 2001</td>
                         <td><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="1b4c7a627774755b7c767a727735787476">[email&#160;protected]</a></td>
-                        <td>Block A, Demo Park</td>
-                        <td>Full-time</td>
+                        <td>Av. Jabaquara, 1870</td>
+                        <td>Online</td>
                       </tr>
                       <tr>
-                        <td>Jaunita Lindgren</td>
-                        <td>Developer</td>
-                        <td>25 Nov, 1945</td>
+                        <td>Jennifer Laura</td>
+                        <td>Maquiadora</td>
+                        <td>25 Nov, 1994</td>
                         <td><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="115b70647f78657051767c70787d3f727e7c">[email&#160;protected]</a></td>
-                        <td>Block A, Demo Park</td>
-                        <td>Part-time</td>
+                        <td>Av. Jabaquara, 1870</td>
+                        <td>Online</td>
                       </tr>
                       <tr>
-                        <td>Lenora MacGyver</td>
-                        <td>Developer</td>
+                        <td>Pedro Gulherme</td>
+                        <td>Professor</td>
                         <td>25 Nov, 1998</td>
                         <td><a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="bdf1d8d3d2cfdcfddad0dcd4d193ded2d0">[email&#160;protected]</a></td>
-                        <td>Block A, Demo Park</td>
-                        <td>Full-time</td>
+                        <td>Av. Jabaquara, 1870</td>
+                        <td>Online</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1555,7 +1486,7 @@
                       <tr>
                         <th>
                           <div class="flex items-center justify-between gap-1.5">
-                            <p>Name</p>
+                            <p>Nome</p>
                             <div class="inline-flex flex-col space-y-[2px]">
                               <span class="inline-block">
                                 <svg class="fill-current" width="10" height="5" viewBox="0 0 10 5" fill="none"
@@ -1574,7 +1505,7 @@
                         </th>
                         <th>
                           <div class="flex items-center justify-between gap-1.5">
-                            <p>Position</p>
+                            <p>Serviço</p>
                             <div class="inline-flex flex-col space-y-[2px]">
                               <span class="inline-block">
                                 <svg class="fill-current" width="10" height="5" viewBox="0 0 10 5" fill="none"
@@ -1593,7 +1524,7 @@
                         </th>
                         <th>
                           <div class="flex items-center justify-between gap-1.5">
-                            <p>Office</p>
+                            <p>Local</p>
                             <div class="inline-flex flex-col space-y-[2px]">
                               <span class="inline-block">
                                 <svg class="fill-current" width="10" height="5" viewBox="0 0 10 5" fill="none"
@@ -1631,7 +1562,7 @@
                         </th>
                         <th data-type="date" data-format="YYYY/DD/MM">
                           <div class="flex items-center justify-between gap-1.5">
-                            <p>Start Date</p>
+                            <p>Data de Inicio</p>
                             <div class="inline-flex flex-col space-y-[2px]">
                               <span class="inline-block">
                                 <svg class="fill-current" width="10" height="5" viewBox="0 0 10 5" fill="none"
@@ -1650,7 +1581,7 @@
                         </th>
                         <th>
                           <div class="flex items-center justify-between gap-1.5">
-                            <p>Salary</p>
+                            <p>Fundos</p>
                             <div class="inline-flex flex-col space-y-[2px]">
                               <span class="inline-block">
                                 <svg class="fill-current" width="10" height="5" viewBox="0 0 10 5" fill="none"
@@ -1671,176 +1602,176 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Cedric Kelly</td>
+                        <td>Gabriel Barbosa</td>
                         <td>Senior Javascript Developer</td>
-                        <td>Edinburgh</td>
-                        <td>22</td>
-                        <td>2012/03/29</td>
-                        <td>$433,060</td>
+                        <td>Rio de Janeiro</td>
+                        <td>26</td>
+                        <td>23/11/2019</td>
+                        <td>R$433,060</td>
                       </tr>
                       <tr>
-                        <td>Brielle Kuphal</td>
-                        <td>Senior Javascript Developer</td>
-                        <td>Edinburgh</td>
+                        <td>Bruno Henrique</td>
+                        <td>Senior Full Stack</td>
+                        <td>Belo Horizonte</td>
                         <td>25</td>
-                        <td>2012/03/29</td>
-                        <td>$433,060</td>
+                        <td>21/05/2019</td>
+                        <td>R$433,060</td>
                       </tr>
                       <tr>
-                        <td>Barney Murray</td>
+                        <td>Jorge Henrique</td>
                         <td>Senior Backend Developer</td>
-                        <td>amsterdam</td>
+                        <td>São Paulo</td>
                         <td>29</td>
-                        <td>2010/05/01</td>
-                        <td>$424,785</td>
+                        <td>10/02/2023</td>
+                        <td>R$424,785</td>
                       </tr>
                       <tr>
-                        <td>Ressie Ruecker</td>
-                        <td>Senior Frontend Developer</td>
-                        <td>Jakarta</td>
+                        <td>Renato Russo </td>
+                        <td>Recrutador</td>
+                        <td>São Paulo</td>
                         <td>27</td>
                         <td>2013/07/01</td>
-                        <td>$785,210</td>
+                        <td>R$785,210</td>
                       </tr>
                       <tr>
-                        <td>Teresa Mertz</td>
-                        <td>Senior Designer</td>
-                        <td>New Caledonia</td>
+                        <td>Maria Inês</td>
+                        <td>Recrutadora</td>
+                        <td>São Paulo</td>
                         <td>25</td>
-                        <td>2014/05/30</td>
-                        <td>$532,126</td>
+                        <td>09/04/2022</td>
+                        <td>R$532,126</td>
                       </tr>
                       <tr>
-                        <td>Chelsey Hackett</td>
-                        <td>Product Manager</td>
-                        <td>NewYork</td>
+                        <td>Cibere Garcia</td>
+                        <td>Recrutadora</td>
+                        <td>São Paulo</td>
                         <td>26</td>
-                        <td>2011/09/30</td>
-                        <td>$421,541</td>
+                        <td>30/08/2022</td>
+                        <td>R$421,541</td>
                       </tr>
                       <tr>
-                        <td>Tatyana Metz</td>
-                        <td>Senior Product Manager</td>
-                        <td>NewYork</td>
+                        <td>Tiana Golçalvez</td>
+                        <td>Recrutadora</td>
+                        <td>São Paulo</td>
                         <td>28</td>
-                        <td>2009/09/30</td>
-                        <td>$852,541</td>
+                        <td>18/07/2023</td>
+                        <td>R$852,541</td>
                       </tr>
                       <tr>
-                        <td>Oleta Harvey</td>
-                        <td>Junior Product Manager</td>
-                        <td>California</td>
+                        <td>Olivia Pereira</td>
+                        <td>Recrutadora</td>
+                        <td>São Paulo</td>
                         <td>25</td>
-                        <td>2015/10/30</td>
-                        <td>$654,444</td>
+                        <td>29/05/2022</td>
+                        <td>R$654,444</td>
                       </tr>
                       <tr>
-                        <td>Bette Haag</td>
-                        <td>Junior Product Manager</td>
-                        <td>California</td>
+                        <td>Vinicius Silva</td>
+                        <td>Recrutador</td>
+                        <td>São Paulo</td>
                         <td>29</td>
-                        <td>2017/12/31</td>
-                        <td>$541,111</td>
+                        <td>25/04/2021</td>
+                        <td>R$541,111</td>
                       </tr>
                       <tr>
-                        <td>Meda Ebert</td>
-                        <td>Junior Web Developer</td>
-                        <td>Amsterdam</td>
+                        <td>Marcia Silva</td>
+                        <td>Recrutadora</td>
+                        <td>São Paulo</td>
                         <td>27</td>
-                        <td>2015/10/31</td>
-                        <td>$651,456</td>
+                        <td>23/11/2019</td>
+                        <td>R$651,456</td>
                       </tr>
                       <tr>
-                        <td>Elissa Stroman</td>
-                        <td>Junior React Developer</td>
-                        <td>Kuala Lumpur</td>
+                        <td>Elaine Sousa</td>
+                        <td>Recrutadora</td>
+                        <td>São Paulo</td>
                         <td>29</td>
-                        <td>2008/05/31</td>
-                        <td>$566,123</td>
+                        <td>04/12/2022</td>
+                        <td>R$566,123</td>
                       </tr>
                       <tr>
-                        <td>Sid Swaniawski</td>
-                        <td>Junior React Developer</td>
-                        <td>Las Vegas</td>
+                        <td>Sergio Lopes</td>
+                        <td>Recrutador</td>
+                        <td>São Paulo</td>
                         <td>29</td>
-                        <td>2009/09/01</td>
-                        <td>$852,456</td>
+                        <td>18/05/2023</td>
+                        <td>R$852,456</td>
                       </tr>
                       <tr>
-                        <td>Madonna Hahn</td>
-                        <td>Senior Vue Developer</td>
-                        <td>New York</td>
+                        <td>Melissa Moreira</td>
+                        <td>Recrutadora</td>
+                        <td>São Paulo</td>
                         <td>27</td>
-                        <td>2006/10/01</td>
-                        <td>$456,147</td>
+                        <td>14/06/2022</td>
+                        <td>R$456,147</td>
                       </tr>
                       <tr>
-                        <td>Waylon Kihn</td>
-                        <td>Senior HTML Developer</td>
-                        <td>Amsterdam</td>
+                        <td>Ronaldo Nazario</td>
+                        <td>Recrutador</td>
+                        <td>Rio de Janeiro</td>
                         <td>23</td>
                         <td>2017/11/01</td>
                         <td>$321,254</td>
                       </tr>
                       <tr>
-                        <td>Jaunita Lindgren</td>
-                        <td>Senior Backend Developer</td>
-                        <td>Jakarta</td>
+                        <td>Jonas Leonardo</td>
+                        <td>Recrutador</td>
+                        <td>São Paulo</td>
                         <td>25</td>
-                        <td>2018/12/01</td>
-                        <td>$321,254</td>
+                        <td>20/02/2023</td>
+                        <td>R$321,254</td>
                       </tr>
                       <tr>
-                        <td>Lenora MacGyver</td>
-                        <td>Junior HTML Developer</td>
-                        <td>Carolina</td>
+                        <td>Lenora Morais</td>
+                        <td>Recrutadora</td>
+                        <td>São Paulo</td>
                         <td>27</td>
-                        <td>2015/09/31</td>
-                        <td>$852,254</td>
+                        <td>16/03/2022</td>
+                        <td>R$852,254</td>
                       </tr>
                       <tr>
-                        <td>Edyth McCullough</td>
-                        <td>Senior Javascript Developer</td>
-                        <td>Edinburgh</td>
+                        <td>Edicarlos Moreira</td>
+                        <td>Recrutador</td>
+                        <td>Piauí</td>
                         <td>25</td>
-                        <td>2012/03/29</td>
-                        <td>$433,060</td>
+                        <td>23/11/2019</td>
+                        <td>R$433,060</td>
                       </tr>
                       <tr>
-                        <td>Ibrahim Stroman</td>
-                        <td>Senior Backend Developer</td>
-                        <td>amsterdam</td>
+                        <td>Lucas Guilherme</td>
+                        <td>Recrutador</td>
+                        <td>São Paulo</td>
                         <td>29</td>
-                        <td>2010/05/01</td>
-                        <td>$424,785</td>
+                        <td>05/09/2022</td>
+                        <td>R$424,785</td>
                       </tr>
                       <tr>
-                        <td>Katelynn Reichert</td>
-                        <td>Senior Frontend Developer</td>
-                        <td>Jakarta</td>
+                        <td>Katelynn Vital</td>
+                        <td>Recrutadora</td>
+                        <td>São Paulo</td>
                         <td>27</td>
-                        <td>2013/07/01</td>
-                        <td>$785,210</td>
+                        <td>24/05/2023</td>
+                        <td>R$785,210</td>
                       </tr>
                       <tr>
-                        <td>Logan Kiehn</td>
-                        <td>Senior Designer</td>
-                        <td>New Caledonia</td>
+                        <td>Adalberto de Sousa</td>
+                        <td>Recrutador</td>
+                        <td>Piauí</td>
                         <td>25</td>
-                        <td>2014/05/30</td>
-                        <td>$532,126</td>
+                        <td>13/09/2023</td>
+                        <td>R$532,126</td>
                       </tr>
                       <tr>
-                        <td>Chelsey Hackett</td>
-                        <td>Product Manager</td>
-                        <td>NewYork</td>
+                        <td>Carla de Deus</td>
+                        <td>Recrutadora</td>
+                        <td>São Paulo</td>
                         <td>26</td>
-                        <td>2011/09/30</td>
-                        <td>$421,541</td>
+                        <td>16/06/2023</td>
+                        <td>R$421,541</td>
                       </tr>
                       <tr>
                         <td>Tatyana Metz</td>
-                        <td>Senior Product Manager</td>
+                        <td>Recrutador</td>
                         <td>NewYork</td>
                         <td>28</td>
                         <td>2009/09/30</td>
@@ -1848,7 +1779,7 @@
                       </tr>
                       <tr>
                         <td>Oleta Harvey</td>
-                        <td>Junior Product Manager</td>
+                        <td>Recrutador</td>
                         <td>California</td>
                         <td>25</td>
                         <td>2015/10/30</td>
@@ -1856,7 +1787,7 @@
                       </tr>
                       <tr>
                         <td>Rogers Stanton</td>
-                        <td>Junior Product Manager</td>
+                        <td>Recrutador</td>
                         <td>California</td>
                         <td>29</td>
                         <td>2017/12/31</td>
@@ -1864,7 +1795,7 @@
                       </tr>
                       <tr>
                         <td>Alanis Torp</td>
-                        <td>Junior Web Developer</td>
+                        <td>Recrutador</td>
                         <td>Amsterdam</td>
                         <td>27</td>
                         <td>2015/10/31</td>
@@ -1872,7 +1803,7 @@
                       </tr>
                       <tr>
                         <td>Jarvis Bauch</td>
-                        <td>Junior React Developer</td>
+                        <td>Recrutador</td>
                         <td>Kuala Lumpur</td>
                         <td>29</td>
                         <td>2008/05/31</td>

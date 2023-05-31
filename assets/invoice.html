@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Invoice | TailAdmin - Tailwind CSS Admin Dashboard Template</title>
+    <title>Fatura | Administrador - Administrador CSS Admin Painel Template</title>
   <link rel="icon" href="logo.ico"><link href="style.css" rel="stylesheet"></head>
 
   <body
@@ -451,231 +451,167 @@
               </svg>
             </a>
 
-            <!-- Dropdown Menu Start -->
-            <div
-              class="translate transform overflow-hidden"
-              :class="(selected === 'UiElements') ? 'block' :'hidden'"
-            >
-              <ul class="mt-4 mb-3 flex flex-col gap-2 pl-6">
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="form-elements.html"
-                    :class="page === 'alerts' && '!text-white'"
-                    >Elementos do Usuário</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="alerts.html"
-                    :class="page === 'alerts' && '!text-white'"
-                    >Alerts</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="buttons.html"
-                    :class="page === 'buttons' && '!text-white'"
-                    >Buttons</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="buttons-group.html"
-                    :class="page === 'buttonsGroup' && '!text-white'"
-                    >Buttons Group
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="badge.html"
-                    :class="page === 'badge' && '!text-white'"
-                    >Badge
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="breadcrumb.html"
-                    :class="page === 'breadcrumb' && '!text-white'"
-                    >Breadcrumb
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="cards.html"
-                    :class="page === 'card' && '!text-white'"
-                    >Cards
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="dropdowns.html"
-                    :class="page === 'dropdowns' && '!text-white'"
-                    >Dropdowns
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="modals.html"
-                    :class="page === 'Modals' && '!text-white'"
-                    >Modals
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="tabs.html"
-                    :class="page === 'tabs' && '!text-white'"
-                    >Tabs
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="tooltips.html"
-                    :class="page === 'tooltips' && '!text-white'"
-                    >Tooltips
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="popovers.html"
-                    :class="page === 'popovers' && '!text-white'"
-                    >Popovers
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="accordion.html"
-                    :class="page === 'accordion' && '!text-white'"
-                    >Accordion
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="notifications.html"
-                    :class="page === 'notifications' && '!text-white'"
-                    >Notifications
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="pagination.html"
-                    :class="page === 'pagination' && '!text-white'"
-                    >Pagination
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="progress.html"
-                    :class="page === 'progress' && '!text-white'"
-                    >Progress
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="carousel.html"
-                    :class="page === 'carousel' && '!text-white'"
-                    >Carousel
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="images.html"
-                    :class="page === 'images' && '!text-white'"
-                    >Images
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="videos.html"
-                    :class="page === 'videos' && '!text-white'"
-                    >Videos
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-              </ul>
-            </div>
-            <!-- Dropdown Menu End -->
+<!-- Dropdown Menu Start -->
+<div
+  class="translate transform overflow-hidden"
+  :class="(selected === 'UiElements') ? 'block' :'hidden'"
+>
+  <ul class="mt-4 mb-3 flex flex-col gap-2 pl-6">
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/form-elements.html"
+        :class="page === 'alerts' && '!text-white'"
+        >Elementos do Usuário</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/alerts.html"
+        :class="page === 'alerts' && '!text-white'"
+        >Alerts</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/buttons.html"
+        :class="page === 'buttons' && '!text-white'"
+        >Buttons</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/buttons-group.html"
+        :class="page === 'buttonsGroup' && '!text-white'"
+        >Buttons Group</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/badge.html"
+        :class="page === 'badge' && '!text-white'"
+        >Badge</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/breadcrumb.html"
+        :class="page === 'breadcrumb' && '!text-white'"
+        >Breadcrumb</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/cards.html"
+        :class="page === 'card' && '!text-white'"
+        >Cards</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/dropdowns.html"
+        :class="page === 'dropdowns' && '!text-white'"
+        >Dropdowns</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/modals.html"
+        :class="page === 'Modals' && '!text-white'"
+        >Modals</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/tabs.html"
+        :class="page === 'tabs' && '!text-white'"
+        >Tabs</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/tooltips.html"
+        :class="page === 'tooltips' && '!text-white'"
+        >Tooltips</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/popovers.html"
+        :class="page === 'popovers' && '!text-white'"
+        >Popovers</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/accordion.html"
+        :class="page === 'accordion' && '!text-white'"
+        >Accordion</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/notifications.html"
+        :class="page === 'notifications' && '!text-white'"
+        >Notifications</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/pagination.html"
+        :class="page === 'pagination' && '!text-white'"
+        >Pagination</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/progress.html"
+        :class="page === 'progress' && '!text-white'"
+        >Progress</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/carousel.html"
+        :class="page === 'carousel' && '!text-white'"
+        >Carousel</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/images.html"
+        :class="page === 'images' && '!text-white'"
+        >Images</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/videos.html"
+        :class="page === 'videos' && '!text-white'"
+        >Videos</a
+      >
+    </li>
+  </ul>
+</div>
+<!-- Dropdown Menu End -->
           </li>
           <!-- Menu Item Ui Elements -->
           <!-- Menu Item Auth Pages -->
@@ -897,13 +833,11 @@
                 >
                   <p class="text-sm">
                     <span class="text-black dark:text-white"
-                      >Edit your information in a swipe</span
-                    >
-                    Sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim.
+                      >Edite suas informações em um toque</span
+                    >Atualização em andamento.
                   </p>
 
-                  <p class="text-xs">12 May, 2025</p>
+                  <p class="text-xs">12 Maio, 2023</p>
                 </a>
               </li>
               <li>
@@ -913,12 +847,12 @@
                 >
                   <p class="text-sm">
                     <span class="text-black dark:text-white"
-                      >It is a long established fact</span
+                      >É um fato há muito estabelecido</span
                     >
-                    that a reader will be distracted by the readable.
+                    Que um leitor será distraído pelo legível.
                   </p>
 
-                  <p class="text-xs">24 Feb, 2025</p>
+                  <p class="text-xs">24 Fev, 2023</p>
                 </a>
               </li>
               <li>
@@ -928,13 +862,11 @@
                 >
                   <p class="text-sm">
                     <span class="text-black dark:text-white"
-                      >There are many variations</span
+                      >Existem muitas variações</span
                     >
-                    of passages of Lorem Ipsum available, but the majority have
-                    suffered
                   </p>
 
-                  <p class="text-xs">04 Jan, 2025</p>
+                  <p class="text-xs">04 Jan, 2023</p>
                 </a>
               </li>
               <li>
@@ -944,13 +876,11 @@
                 >
                   <p class="text-sm">
                     <span class="text-black dark:text-white"
-                      >There are many variations</span
+                      >Existem muitas variações</span
                     >
-                    of passages of Lorem Ipsum available, but the majority have
-                    suffered
                   </p>
 
-                  <p class="text-xs">01 Dec, 2024</p>
+                  <p class="text-xs">01 Dez, 2023</p>
                 </a>
               </li>
             </ul>
@@ -1027,10 +957,10 @@
 
                   <div>
                     <h6 class="text-sm font-medium text-black dark:text-white">
-                      Mariya Desoja
+                        Maria
                     </h6>
-                    <p class="text-sm">I like your confidence 💪</p>
-                    <p class="text-xs">2min ago</p>
+                    <p class="text-sm">Eu gosto da sua confiança💪</p>
+                    <p class="text-xs">2min atrás</p>
                   </div>
                 </a>
               </li>
@@ -1045,10 +975,10 @@
 
                   <div>
                     <h6 class="text-sm font-medium text-black dark:text-white">
-                      Robert Jhon
+                      Roberto
                     </h6>
-                    <p class="text-sm">Can you share your offer?</p>
-                    <p class="text-xs">10min ago</p>
+                    <p class="text-sm">Você pode compartilhar sua oferta?</p>
+                    <p class="text-xs">10min atrás</p>
                   </div>
                 </a>
               </li>
@@ -1063,10 +993,10 @@
 
                   <div>
                     <h6 class="text-sm font-medium text-black dark:text-white">
-                      Henry Dholi
+                    Henrique Dourado
                     </h6>
-                    <p class="text-sm">I cam across your profile and...</p>
-                    <p class="text-xs">1day ago</p>
+                    <p class="text-sm">Claro, amanhã estará pronto...</p>
+                    <p class="text-xs">1 dia atrás</p>
                   </div>
                 </a>
               </li>
@@ -1081,10 +1011,10 @@
 
                   <div>
                     <h6 class="text-sm font-medium text-black dark:text-white">
-                      Cody Fisher
+                    Carlos Fernando
                     </h6>
-                    <p class="text-sm">I’m waiting for you response!</p>
-                    <p class="text-xs">5days ago</p>
+                    <p class="text-sm">aguardo sua resposta!</p>
+                    <p class="text-xs">5 dias atrás</p>
                   </div>
                 </a>
               </li>
@@ -1099,10 +1029,10 @@
 
                   <div>
                     <h6 class="text-sm font-medium text-black dark:text-white">
-                      Mariya Desoja
+                        Maria
                     </h6>
-                    <p class="text-sm">I like your confidence 💪</p>
-                    <p class="text-xs">2min ago</p>
+                    <p class="text-sm">Ontem mesmo</p>
+                    <p class="text-xs">5 dias atrás</p>
                   </div>
                 </a>
               </li>
@@ -1126,9 +1056,9 @@
         >
           <span class="hidden text-right lg:block">
             <span class="block text-sm font-medium text-black dark:text-white"
-              >Thomas Anree</span
+              >Administrador</span
             >
-            <span class="block text-xs font-medium">UX Designer</span>
+            <span class="block text-xs font-medium">Geral</span>
           </span>
 
           <span class="h-12 w-12 rounded-full">
@@ -1183,7 +1113,7 @@
                     fill=""
                   />
                 </svg>
-                My Profile
+                Meu Perfil
               </a>
             </li>
             <li>
@@ -1204,7 +1134,7 @@
                     fill=""
                   />
                 </svg>
-                My Contacts
+                Meu Contato
               </a>
             </li>
             <li>
@@ -1229,7 +1159,7 @@
                     fill=""
                   />
                 </svg>
-                Account Settings
+                Configurações de Conta 
               </a>
             </li>
           </ul>
@@ -1253,7 +1183,7 @@
                 fill=""
               />
             </svg>
-            Log Out
+            Sair 
           </button>
         </div>
         <!-- Dropdown End -->
@@ -1273,15 +1203,15 @@
               class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
             >
               <h2 class="text-title-md2 font-bold text-black dark:text-white">
-                Invoice
+                Fatura
               </h2>
 
               <nav>
                 <ol class="flex items-center gap-2">
                   <li>
-                    <a class="font-medium" href="index.html">Dashboard /</a>
+                    <a class="font-medium" href="index.html">Painel/</a>
                   </li>
-                  <li class="font-medium text-primary">Invoice</li>
+                  <li class="font-medium text-primary">Fatura</li>
                 </ol>
               </nav>
             </div>
@@ -1299,40 +1229,40 @@
                     <p
                       class="mb-1.5 text-lg font-medium text-black dark:text-white"
                     >
-                      From
+                    De
                     </p>
                     <h4
                       class="mb-4 text-2xl font-medium text-black dark:text-white"
                     >
-                      Roger Culhane
+                      Carlos Alfredo
                     </h4>
                     <a href="invoice.html#" class="block"
                       ><span class="font-medium">Email:</span>
                       <span class="__cf_email__" data-cfemail="4a2925243e2b293e0a2f322b273a262f64292527">[email&#160;protected]</span></a
                     >
                     <span class="mt-2 block"
-                      ><span class="font-medium">Address:</span> 2972 Westheimer
-                      Rd. Santa Ana.</span
+                      ><span class="font-medium">Endereço:</span> Av. Jabaquara, 1870
+                      Vila da Saúde, São Paulo - SP.</span
                     >
                   </div>
                   <div>
                     <p
                       class="mb-1.5 text-lg font-medium text-black dark:text-white"
                     >
-                      To
+                      Para
                     </p>
                     <h4
                       class="mb-4 text-2xl font-medium text-black dark:text-white"
                     >
-                      Cristofer Levin
+                      Camila Rodrigues
                     </h4>
                     <a href="invoice.html#" class="block"
                       ><span class="font-medium">Email:</span>
                       <span class="__cf_email__" data-cfemail="0e6d61607a6f6d7a4e6b766f637e626b206d6163">[email&#160;protected]</span></a
                     >
                     <span class="mt-2 block"
-                      ><span class="font-medium">Address:</span> New York, USA
-                      2707 Davis Anenue
+                      ><span class="font-medium">Endereço:</span> Av. Jabaquara, 1870
+                      Vila da Saúde, São Paulo - SP
                     </span>
                   </div>
                 </div>
@@ -1347,7 +1277,7 @@
                 <div class="items-center sm:flex">
                   <div class="mb-3 mr-6 h-20 w-20 sm:mb-0">
                     <img
-                      src="src/images/product/product-thumb.png"
+                      src="https://blog.telhanorte.com.br/wp-content/uploads/2020/12/qual-melhor-tijolo-construcao-2.png"
                       alt="product"
                       class="h-full w-full rounded-sm object-cover object-center"
                     />
@@ -1358,11 +1288,11 @@
                         href="invoice.html#"
                         class="inline-block font-medium text-black hover:text-primary dark:text-white"
                       >
-                        Mist Black Triblend
+                      Serviço de pedreiro profissional
                       </a>
                       <p class="flex text-sm font-medium">
-                        <span class="mr-5"> Color: White </span>
-                        <span class="mr-5"> Size: Medium </span>
+                        <span class="mr-5"> Pacote: Premium </span>
+                        <span class="mr-5"></span>
                       </p>
                     </div>
                     <div class="flex items-center md:justify-end">
@@ -1370,7 +1300,7 @@
                         Qty: 01
                       </p>
                       <p class="mr-5 font-medium text-black dark:text-white">
-                        $120.00
+                        R$200.00
                       </p>
                     </div>
                   </div>
@@ -1383,11 +1313,10 @@
                     <h4
                       class="mb-4 text-xl font-medium text-black dark:text-white md:text-2xl"
                     >
-                      Shipping Method
+                    Método de Serviço
                     </h4>
                     <p class="font-medium">
-                      FedEx - Take up to 3 <br />
-                      working days.
+                      Presencial <br />
                     </p>
                   </div>
                 </div>
@@ -1396,10 +1325,10 @@
                     <h4
                       class="mb-4 text-xl font-medium text-black dark:text-white md:text-2xl"
                     >
-                      Payment Method
+                      Métedo de Pagamento 
                     </h4>
                     <p class="font-medium">
-                      Apply Pay Mastercard <br />
+                       CRÉDITO Mastercard <br />
                       **** **** **** 5874
                     </p>
                   </div>
@@ -1411,19 +1340,19 @@
                         class="mb-4 flex justify-between font-medium text-black dark:text-white"
                       >
                         <span> Subtotal </span>
-                        <span> $120.00 </span>
+                        <span> R$200.00 </span>
                       </p>
                       <p
                         class="mb-4 flex justify-between font-medium text-black dark:text-white"
                       >
-                        <span> Shipping Cost (+) </span>
-                        <span> $10.00 </span>
+                        <span> Taxa(+) </span>
+                        <span> R$10.00 </span>
                       </p>
                       <p
                         class="mb-4 mt-2 flex justify-between border-t border-stroke pt-6 font-medium text-black dark:border-strokedark dark:text-white"
                       >
-                        <span> Total Payable </span>
-                        <span> $130.00 </span>
+                        <span> Total Apagar </span>
+                        <span> R$210.00 </span>
                       </p>
                     </div>
 
@@ -1433,12 +1362,12 @@
                       <button
                         class="flex items-center justify-center rounded border border-primary py-2.5 px-8 text-center font-medium text-primary hover:opacity-90"
                       >
-                        Download Invoice
+                        Download Fatura
                       </button>
                       <button
                         class="flex items-center justify-center rounded bg-primary py-2.5 px-8 text-center font-medium text-gray hover:bg-opacity-90"
                       >
-                        Send Invoice
+                        Enviar fatura
                       </button>
                     </div>
                   </div>

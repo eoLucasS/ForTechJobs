@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Marketing Dashboard | TailAdmin - Tailwind CSS Admin Dashboard Template
+      Marketing Painel |Administrador -Administrador CSS Admin Painel Template
     </title>
   <link rel="icon" href="logo.ico"><link href="style.css" rel="stylesheet"></head>
 
@@ -453,231 +453,167 @@
               </svg>
             </a>
 
-            <!-- Dropdown Menu Start -->
-            <div
-              class="translate transform overflow-hidden"
-              :class="(selected === 'UiElements') ? 'block' :'hidden'"
-            >
-              <ul class="mt-4 mb-3 flex flex-col gap-2 pl-6">
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="form-elements.html"
-                    :class="page === 'alerts' && '!text-white'"
-                    >Elementos do Usuário</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="alerts.html"
-                    :class="page === 'alerts' && '!text-white'"
-                    >Alerts</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="buttons.html"
-                    :class="page === 'buttons' && '!text-white'"
-                    >Buttons</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="buttons-group.html"
-                    :class="page === 'buttonsGroup' && '!text-white'"
-                    >Buttons Group
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="badge.html"
-                    :class="page === 'badge' && '!text-white'"
-                    >Badge
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="breadcrumb.html"
-                    :class="page === 'breadcrumb' && '!text-white'"
-                    >Breadcrumb
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="cards.html"
-                    :class="page === 'card' && '!text-white'"
-                    >Cards
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="dropdowns.html"
-                    :class="page === 'dropdowns' && '!text-white'"
-                    >Dropdowns
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="modals.html"
-                    :class="page === 'Modals' && '!text-white'"
-                    >Modals
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="tabs.html"
-                    :class="page === 'tabs' && '!text-white'"
-                    >Tabs
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="tooltips.html"
-                    :class="page === 'tooltips' && '!text-white'"
-                    >Tooltips
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="popovers.html"
-                    :class="page === 'popovers' && '!text-white'"
-                    >Popovers
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="accordion.html"
-                    :class="page === 'accordion' && '!text-white'"
-                    >Accordion
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="notifications.html"
-                    :class="page === 'notifications' && '!text-white'"
-                    >Notifications
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="pagination.html"
-                    :class="page === 'pagination' && '!text-white'"
-                    >Pagination
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="progress.html"
-                    :class="page === 'progress' && '!text-white'"
-                    >Progress
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="carousel.html"
-                    :class="page === 'carousel' && '!text-white'"
-                    >Carousel
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="images.html"
-                    :class="page === 'images' && '!text-white'"
-                    >Images
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="videos.html"
-                    :class="page === 'videos' && '!text-white'"
-                    >Videos
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-              </ul>
-            </div>
-            <!-- Dropdown Menu End -->
+<!-- Dropdown Menu Start -->
+<div
+  class="translate transform overflow-hidden"
+  :class="(selected === 'UiElements') ? 'block' :'hidden'"
+>
+  <ul class="mt-4 mb-3 flex flex-col gap-2 pl-6">
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/form-elements.html"
+        :class="page === 'alerts' && '!text-white'"
+        >Elementos do Usuário</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/alerts.html"
+        :class="page === 'alerts' && '!text-white'"
+        >Alerts</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/buttons.html"
+        :class="page === 'buttons' && '!text-white'"
+        >Buttons</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/buttons-group.html"
+        :class="page === 'buttonsGroup' && '!text-white'"
+        >Buttons Group</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/badge.html"
+        :class="page === 'badge' && '!text-white'"
+        >Badge</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/breadcrumb.html"
+        :class="page === 'breadcrumb' && '!text-white'"
+        >Breadcrumb</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/cards.html"
+        :class="page === 'card' && '!text-white'"
+        >Cards</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/dropdowns.html"
+        :class="page === 'dropdowns' && '!text-white'"
+        >Dropdowns</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/modals.html"
+        :class="page === 'Modals' && '!text-white'"
+        >Modals</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/tabs.html"
+        :class="page === 'tabs' && '!text-white'"
+        >Tabs</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/tooltips.html"
+        :class="page === 'tooltips' && '!text-white'"
+        >Tooltips</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/popovers.html"
+        :class="page === 'popovers' && '!text-white'"
+        >Popovers</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/accordion.html"
+        :class="page === 'accordion' && '!text-white'"
+        >Accordion</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/notifications.html"
+        :class="page === 'notifications' && '!text-white'"
+        >Notifications</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/pagination.html"
+        :class="page === 'pagination' && '!text-white'"
+        >Pagination</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/progress.html"
+        :class="page === 'progress' && '!text-white'"
+        >Progress</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/carousel.html"
+        :class="page === 'carousel' && '!text-white'"
+        >Carousel</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/images.html"
+        :class="page === 'images' && '!text-white'"
+        >Images</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/videos.html"
+        :class="page === 'videos' && '!text-white'"
+        >Videos</a
+      >
+    </li>
+  </ul>
+</div>
+<!-- Dropdown Menu End -->
           </li>
           <!-- Menu Item Ui Elements -->
           <!-- Menu Item Auth Pages -->
@@ -785,7 +721,7 @@
 
           <input
             type="text"
-            placeholder="Type to search..."
+            placeholder="Pesquisar..."
             class="w-full xl:w-125 bg-transparent pr-4 pl-9 focus:outline-none"
           />
         </div>
@@ -888,7 +824,8 @@
             class="absolute -right-27 mt-2.5 flex h-90 w-75 flex-col rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark sm:right-0 sm:w-80"
           >
             <div class="px-4.5 py-3">
-              <h5 class="text-sm font-medium text-bodydark2">Notification</h5>
+              <h5 class="text-sm font-medium text-bodydark2">Notificações
+              </h5>
             </div>
 
             <ul class="flex h-auto flex-col overflow-y-auto">
@@ -899,13 +836,11 @@
                 >
                   <p class="text-sm">
                     <span class="text-black dark:text-white"
-                      >Edit your information in a swipe</span
-                    >
-                    Sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim.
+                      >Edite suas informações em um toque</span
+                    > Atualização em andamento.
                   </p>
 
-                  <p class="text-xs">12 May, 2025</p>
+                  <p class="text-xs">12 Maio, 2023</p>
                 </a>
               </li>
               <li>
@@ -915,12 +850,12 @@
                 >
                   <p class="text-sm">
                     <span class="text-black dark:text-white"
-                      >It is a long established fact</span
-                    >
-                    that a reader will be distracted by the readable.
+                      >
+                      É um fato há muito estabelecido</span
+                    > Que um leitor será distraído pelo legível.
                   </p>
 
-                  <p class="text-xs">24 Feb, 2025</p>
+                  <p class="text-xs">24 Fev, 2023</p>
                 </a>
               </li>
               <li>
@@ -930,13 +865,11 @@
                 >
                   <p class="text-sm">
                     <span class="text-black dark:text-white"
-                      >There are many variations</span
+                      >Existem muitas variações</span
                     >
-                    of passages of Lorem Ipsum available, but the majority have
-                    suffered
                   </p>
 
-                  <p class="text-xs">04 Jan, 2025</p>
+                  <p class="text-xs">04 Jan, 2023</p>
                 </a>
               </li>
               <li>
@@ -946,13 +879,11 @@
                 >
                   <p class="text-sm">
                     <span class="text-black dark:text-white"
-                      >There are many variations</span
+                      >Existem muitas variações</span
                     >
-                    of passages of Lorem Ipsum available, but the majority have
-                    suffered
                   </p>
 
-                  <p class="text-xs">01 Dec, 2024</p>
+                  <p class="text-xs">01 Dez, 2023</p>
                 </a>
               </li>
             </ul>
@@ -1029,10 +960,10 @@
 
                   <div>
                     <h6 class="text-sm font-medium text-black dark:text-white">
-                      Mariya Desoja
+                      Maria
                     </h6>
-                    <p class="text-sm">I like your confidence 💪</p>
-                    <p class="text-xs">2min ago</p>
+                    <p class="text-sm">Eu gosto da sua confiança💪</p>
+                    <p class="text-xs">2min atrás</p>
                   </div>
                 </a>
               </li>
@@ -1047,10 +978,10 @@
 
                   <div>
                     <h6 class="text-sm font-medium text-black dark:text-white">
-                      Robert Jhon
+                      Roberto
                     </h6>
-                    <p class="text-sm">Can you share your offer?</p>
-                    <p class="text-xs">10min ago</p>
+                    <p class="text-sm">Você pode compartilhar sua oferta?</p>
+                    <p class="text-xs">10min atrás</p>
                   </div>
                 </a>
               </li>
@@ -1065,10 +996,10 @@
 
                   <div>
                     <h6 class="text-sm font-medium text-black dark:text-white">
-                      Henry Dholi
+                      Henrique Dourado
                     </h6>
-                    <p class="text-sm">I cam across your profile and...</p>
-                    <p class="text-xs">1day ago</p>
+                    <p class="text-sm">Claro, amanhã estará pronto...</p>
+                    <p class="text-xs">1 dia atrás</p>
                   </div>
                 </a>
               </li>
@@ -1083,10 +1014,10 @@
 
                   <div>
                     <h6 class="text-sm font-medium text-black dark:text-white">
-                      Cody Fisher
+                      Carlos Fernando
                     </h6>
-                    <p class="text-sm">I’m waiting for you response!</p>
-                    <p class="text-xs">5days ago</p>
+                    <p class="text-sm">aguardo sua resposta!</p>
+                    <p class="text-xs">5 dias atrás
                   </div>
                 </a>
               </li>
@@ -1101,10 +1032,10 @@
 
                   <div>
                     <h6 class="text-sm font-medium text-black dark:text-white">
-                      Mariya Desoja
+                      Maria
                     </h6>
-                    <p class="text-sm">I like your confidence 💪</p>
-                    <p class="text-xs">2min ago</p>
+                    <p class="text-sm">Ontem mesmo</p>
+                    <p class="text-xs">5 dias atrás</p>
                   </div>
                 </a>
               </li>
@@ -1128,9 +1059,9 @@
         >
           <span class="hidden text-right lg:block">
             <span class="block text-sm font-medium text-black dark:text-white"
-              >Thomas Anree</span
+              >Administrador</span
             >
-            <span class="block text-xs font-medium">UX Designer</span>
+            <span class="block text-xs font-medium">Geral</span>
           </span>
 
           <span class="h-12 w-12 rounded-full">
@@ -1185,7 +1116,7 @@
                     fill=""
                   />
                 </svg>
-                My Profile
+                Meu Perfil
               </a>
             </li>
             <li>
@@ -1206,7 +1137,7 @@
                     fill=""
                   />
                 </svg>
-                My Contacts
+                Meus Contatos
               </a>
             </li>
             <li>
@@ -1231,7 +1162,7 @@
                     fill=""
                   />
                 </svg>
-                Account Settings
+                Configurações de Conta
               </a>
             </li>
           </ul>
@@ -1255,7 +1186,7 @@
                 fill=""
               />
             </svg>
-            Log Out
+            Sair
           </button>
         </div>
         <!-- Dropdown End -->
@@ -1276,9 +1207,9 @@
                 <h2
                   class="mb-1.5 text-title-md2 font-bold text-black dark:text-white"
                 >
-                  Highlights
+                  Destaques
                 </h2>
-                <p class="font-medium">Latest social statistics</p>
+                <p class="font-medium">Últimas estatísticas sociais</p>
               </div>
               <div x-data="{openDropDown: false}" class="relative">
                 <button @click="openDropDown = !openDropDown">
@@ -1385,11 +1316,11 @@
                     fill="#3C50E0"
                   />
                 </svg>
-                <h4 class="mt-5 mb-2 font-medium">Avg. Client Rating</h4>
+                <h4 class="mt-5 mb-2 font-medium">Classificação do cliente</h4>
                 <h3
                   class="mb-2 text-title-md font-bold text-black dark:text-white"
                 >
-                  7.8/10
+                  8.9/10
                 </h3>
                 <p class="flex items-center gap-1 text-sm font-medium">
                   <svg
@@ -1405,7 +1336,7 @@
                     />
                   </svg>
                   <span class="text-meta-3">+2.5%</span>
-                  <span>than last Week</span>
+                  <span>semana passada</span>
                 </p>
               </div>
 
@@ -1433,7 +1364,7 @@
                   />
                 </svg>
 
-                <h4 class="mt-5 mb-2 font-medium">Instagram Followers</h4>
+                <h4 class="mt-5 mb-2 font-medium">Instagram Seguidores</h4>
                 <h3
                   class="mb-2 text-title-md font-bold text-black dark:text-white"
                 >
@@ -1453,7 +1384,7 @@
                     />
                   </svg>
                   <span class="text-red">-1.5%</span>
-                  <span>than last Week</span>
+                  <span>semana passada</span>
                 </p>
               </div>
 
@@ -1501,7 +1432,7 @@
                   />
                 </svg>
 
-                <h4 class="mt-5 mb-2 font-medium">Avg. Client Rating</h4>
+                <h4 class="mt-5 mb-2 font-medium">ADS</h4>
                 <h3
                   class="mb-2 text-title-md font-bold text-black dark:text-white"
                 >
@@ -1522,7 +1453,7 @@
                   </svg>
 
                   <span class="text-meta-3">+2.6%</span>
-                  <span>than last Week</span>
+                  <span>semana passada</span>
                 </p>
               </div>
             </div>
@@ -1539,7 +1470,7 @@
                       <h4
                         class="text-title-sm2 font-bold text-black dark:text-white"
                       >
-                        Top Channels
+                      Principais Canais
                       </h4>
                     </div>
                     <div x-data="{openDropDown: false}" class="relative">
@@ -1635,22 +1566,22 @@
                     >
                       <div class="p-2.5 xl:p-4">
                         <h5 class="text-sm font-medium uppercase xsm:text-base">
-                          Source
+                          Pesquisa
                         </h5>
                       </div>
                       <div class="p-2.5 text-center xl:p-4">
                         <h5 class="text-sm font-medium uppercase xsm:text-base">
-                          Visitors
+                          Visualização
                         </h5>
                       </div>
                       <div class="p-2.5 text-center xl:p-4">
                         <h5 class="text-sm font-medium uppercase xsm:text-base">
-                          Revenues
+                          Receita
                         </h5>
                       </div>
                       <div class="hidden p-2.5 text-center sm:block xl:p-4">
                         <h5 class="text-sm font-medium uppercase xsm:text-base">
-                          Conversion
+                          Views %
                         </h5>
                       </div>
                     </div>
@@ -1841,9 +1772,9 @@
   >
     <div>
       <h2 class="mb-1.5 text-title-md2 font-bold text-black dark:text-white">
-        Campaign Visitors
+        Desempenho da Última Campanha
       </h2>
-      <p class="text-sm font-medium">Last Campaign Performance</p>
+      <p class="text-sm font-medium">Desempenho da última campanha</p>
     </div>
     <div>
       <h3 class="mb-1.5 text-title-md2 font-bold text-black dark:text-white">
@@ -1885,9 +1816,9 @@
                     <h2
                       class="mb-1.5 text-title-md2 font-bold text-black dark:text-white"
                     >
-                      External Links
+                     Links externos
                     </h2>
-                    <p class="text-sm font-medium">Most used resources</p>
+                    <p class="text-sm font-medium">Recursos mais usados</p>
                   </div>
                   <div x-data="{openDropDown: false}" class="relative">
                     <button @click="openDropDown = !openDropDown">
@@ -2253,11 +2184,11 @@
   <div class="mb-6 flex items-start justify-between">
     <div>
       <h4 class="text-title-sm2 font-bold text-black dark:text-white">
-        Campaign Visitors
+        Desempenho da Última Campanha
       </h4>
       <div class="mt-2.5 flex gap-2.5">
         <h3 class="mb-1.5 text-title-lg font-bold text-black dark:text-white">
-          $560.93
+          R$560.93
         </h3>
         <span class="flex items-center gap-1 text-sm font-medium text-meta-3">
           <svg
@@ -2288,7 +2219,7 @@
           +2.5%
         </span>
       </div>
-      <span class="mt-1 block font-medium">Average cost per interaction</span>
+      <span class="mt-1 block font-medium">Custo médio por interação</span>
     </div>
     <div x-data="{openDropDown: false}" class="relative">
       <button @click="openDropDown = !openDropDown">
@@ -2384,7 +2315,7 @@
               </div>
               <!-- ===== Chart Six End ===== -->
 
-              <!-- ===== Featured Campaigns Start ===== -->
+              <!-- ===== Campanhas em Destaque Start ===== -->
               <div
                 class="col-span-12 rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-6"
               >
@@ -2395,9 +2326,9 @@
                     <h2
                       class="mb-1.5 text-title-md2 font-bold text-black dark:text-white"
                     >
-                      Featured Campaigns
+                    Campanhas em Destaque
                     </h2>
-                    <p class="text-sm font-medium">75% activity growth</p>
+                    <p class="text-sm font-medium">75% de crescimento da atividade</p>
                   </div>
                   <div x-data="{openDropDown: false}" class="relative">
                     <button @click="openDropDown = !openDropDown">
@@ -2667,7 +2598,7 @@
                     >
                       <div class="xsm:col-span-3">
                         <h4 class="text-sm font-medium uppercase">
-                          EMAIL TITLE
+                          TÍTULO DO E-MAIL
                         </h4>
                       </div>
                       <div class="xsm:col-span-2 sm:col-span-1">
@@ -2677,7 +2608,7 @@
                         <h4
                           class="text-sm font-medium uppercase xsm:text-right"
                         >
-                          CONVERSION
+                          %
                         </h4>
                       </div>
                     </div>
@@ -2696,13 +2627,13 @@
                           <h5
                             class="cursor-pointer font-medium text-sm text-black hover:text-primary dark:text-white dark:hover:text-primary"
                           >
-                            Best Headsets Giveaway
+                          Campanha Outubro Rosa
                           </h5>
                         </div>
                         <div class="xsm:col-span-2 sm:col-span-1">
                           <span
                             class="inline-block rounded bg-meta-8/[0.08] py-1 px-2.5 text-sm font-medium text-meta-8"
-                            >In Queue</span
+                            >Em  rascunho</span
                           >
                         </div>
                         <div
@@ -2723,13 +2654,13 @@
                           <h5
                             class="cursor-pointer font-medium text-sm text-black hover:text-primary dark:text-white dark:hover:text-primary"
                           >
-                            iPhone 14 Plus Giveaway
+                          Campanha de Vacinação contra a COVID-19
                           </h5>
                         </div>
                         <div class="xsm:col-span-2 sm:col-span-1">
                           <span
                             class="inline-block rounded bg-meta-3/[0.08] py-1 px-2.5 text-sm font-medium text-meta-3"
-                            >Sent</span
+                            >Enviado</span
                           >
                         </div>
                         <div
@@ -2750,13 +2681,13 @@
                           <h5
                             class="cursor-pointer font-medium text-sm text-black hover:text-primary dark:text-white dark:hover:text-primary"
                           >
-                            Macbook Pro M1 Giveaway
+                          Campanha de Desemprego Anual 
                           </h5>
                         </div>
                         <div class="xsm:col-span-2 sm:col-span-1">
                           <span
                             class="inline-block rounded bg-meta-3/[0.08] py-1 px-2.5 text-sm font-medium text-meta-3"
-                            >Sent</span
+                            >Enviado</span
                           >
                         </div>
                         <div
@@ -2777,13 +2708,13 @@
                           <h5
                             class="cursor-pointer font-medium text-sm text-black hover:text-primary dark:text-white dark:hover:text-primary"
                           >
-                            Affiliation Program
+                          Campanha de Jovem Aprendiz/Estágio
                           </h5>
                         </div>
                         <div class="xsm:col-span-2 sm:col-span-1">
                           <span
                             class="inline-block rounded bg-meta-3/[0.08] py-1 px-2.5 text-sm font-medium text-meta-3"
-                            >Sent</span
+                            >Enviado</span
                           >
                         </div>
                         <div
@@ -2804,13 +2735,13 @@
                           <h5
                             class="cursor-pointer font-medium text-sm text-black hover:text-primary dark:text-white dark:hover:text-primary"
                           >
-                            Google AdSense
+                          Campanha"Doar Sangue é Salvar Vidas"
                           </h5>
                         </div>
                         <div class="xsm:col-span-2 sm:col-span-1">
                           <span
                             class="inline-block rounded bg-primary/[0.08] py-1 px-2.5 text-sm font-medium text-primary"
-                            >In Draft</span
+                            >Andamento</span
                           >
                         </div>
                         <div
@@ -3367,14 +3298,14 @@
 
                       <div>
                         <p class="text-black dark:text-white">
-                          <span class="font-medium">Timothy Smith</span>
-                          Commented on Cloud
-                          <span class="font-medium">Killan James</span>
+                          <span class="font-medium">Tiago Santos</span>
+                          Comentou em Cloud para
+                          <span class="font-medium">Kaique Sousa</span>
                         </p>
-                        <span class="mt-1 block text-sm">1 hour ago</span>
+                        <span class="mt-1 block text-sm">1 hora atrás</span>
                         <p class="mt-2.5 text-black dark:text-white">
-                          It's an Affiliate commissions SaaS application that
-                          allows you to track your affiliate revenue.
+                          É um aplicativo SaaS de comissões de afiliados que
+                          permite que você acompanhe sua receita de afiliado.
                         </p>
                       </div>
 
@@ -3392,14 +3323,14 @@
 
                       <div>
                         <p class="text-black dark:text-white">
-                          <span class="font-medium">Nancy Martino</span>
-                          Commented on Cloud
-                          <span class="font-medium">Matney</span>
+                          <span class="font-medium">Naldo Martins</span>
+                          Comentou em Cloud para
+                          <span class="font-medium">Marcos</span>
                         </p>
-                        <span class="mt-1 block text-sm">2 hour ago</span>
+                        <span class="mt-1 block text-sm">2 horas atrás</span>
                         <p class="mt-2.5 text-black dark:text-white">
-                          There are many variations of passages of Lorem Ipsum
-                          available, but the majority have suffered.
+                          Existem muitas variações de passagens 
+                          disponível, mas a maioria sofreu atualização.
                         </p>
                       </div>
                     </div>
@@ -3413,13 +3344,13 @@
 
                       <div>
                         <p class="text-black dark:text-white">
-                          <span class="font-medium">Michael Morris</span>
-                          Commented on
-                          <span class="font-medium">Williams Son</span>
+                          <span class="font-medium">Micaela Oliveira</span>
+                          Comentou em Cloud para
+                          <span class="font-medium">William Silva</span>
                         </p>
-                        <span class="mt-1 block text-sm">3 hour ago</span>
+                        <span class="mt-1 block text-sm">3 horas atrás</span>
                         <p class="mt-2.5 text-black dark:text-white">
-                          There are many variations of passages of Lorem Ipsum.
+                          Claro que podemos a ForTech é muito completa.
                         </p>
                       </div>
                     </div>

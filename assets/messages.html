@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chat | TailAdmin - Tailwind CSS Admin Dashboard Template</title>
+    <title>Chat | Administrador - Administrador CSS Admin Painel Template</title>
   <link rel="icon" href="logo.ico"><link href="style.css" rel="stylesheet"></head>
 
   <body
@@ -451,231 +451,167 @@
               </svg>
             </a>
 
-            <!-- Dropdown Menu Start -->
-            <div
-              class="translate transform overflow-hidden"
-              :class="(selected === 'UiElements') ? 'block' :'hidden'"
-            >
-              <ul class="mt-4 mb-3 flex flex-col gap-2 pl-6">
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="form-elements.html"
-                    :class="page === 'alerts' && '!text-white'"
-                    >Elementos do Usuário</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="alerts.html"
-                    :class="page === 'alerts' && '!text-white'"
-                    >Alerts</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="buttons.html"
-                    :class="page === 'buttons' && '!text-white'"
-                    >Buttons</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="buttons-group.html"
-                    :class="page === 'buttonsGroup' && '!text-white'"
-                    >Buttons Group
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="badge.html"
-                    :class="page === 'badge' && '!text-white'"
-                    >Badge
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="breadcrumb.html"
-                    :class="page === 'breadcrumb' && '!text-white'"
-                    >Breadcrumb
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="cards.html"
-                    :class="page === 'card' && '!text-white'"
-                    >Cards
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="dropdowns.html"
-                    :class="page === 'dropdowns' && '!text-white'"
-                    >Dropdowns
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="modals.html"
-                    :class="page === 'Modals' && '!text-white'"
-                    >Modals
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="tabs.html"
-                    :class="page === 'tabs' && '!text-white'"
-                    >Tabs
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="tooltips.html"
-                    :class="page === 'tooltips' && '!text-white'"
-                    >Tooltips
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="popovers.html"
-                    :class="page === 'popovers' && '!text-white'"
-                    >Popovers
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="accordion.html"
-                    :class="page === 'accordion' && '!text-white'"
-                    >Accordion
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="notifications.html"
-                    :class="page === 'notifications' && '!text-white'"
-                    >Notifications
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="pagination.html"
-                    :class="page === 'pagination' && '!text-white'"
-                    >Pagination
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="progress.html"
-                    :class="page === 'progress' && '!text-white'"
-                    >Progress
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="carousel.html"
-                    :class="page === 'carousel' && '!text-white'"
-                    >Carousel
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="images.html"
-                    :class="page === 'images' && '!text-white'"
-                    >Images
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
-                    href="videos.html"
-                    :class="page === 'videos' && '!text-white'"
-                    >Videos
-                    <span
-                      class="absolute right-4 block rounded bg-primary py-1 px-2 text-xs font-medium text-white"
-                      >Pro</span
-                    ></a
-                  >
-                </li>
-              </ul>
-            </div>
-            <!-- Dropdown Menu End -->
+<!-- Dropdown Menu Start -->
+<div
+  class="translate transform overflow-hidden"
+  :class="(selected === 'UiElements') ? 'block' :'hidden'"
+>
+  <ul class="mt-4 mb-3 flex flex-col gap-2 pl-6">
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/form-elements.html"
+        :class="page === 'alerts' && '!text-white'"
+        >Elementos do Usuário</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/alerts.html"
+        :class="page === 'alerts' && '!text-white'"
+        >Alerts</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/buttons.html"
+        :class="page === 'buttons' && '!text-white'"
+        >Buttons</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/buttons-group.html"
+        :class="page === 'buttonsGroup' && '!text-white'"
+        >Buttons Group</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/badge.html"
+        :class="page === 'badge' && '!text-white'"
+        >Badge</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/breadcrumb.html"
+        :class="page === 'breadcrumb' && '!text-white'"
+        >Breadcrumb</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/cards.html"
+        :class="page === 'card' && '!text-white'"
+        >Cards</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/dropdowns.html"
+        :class="page === 'dropdowns' && '!text-white'"
+        >Dropdowns</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/modals.html"
+        :class="page === 'Modals' && '!text-white'"
+        >Modals</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/tabs.html"
+        :class="page === 'tabs' && '!text-white'"
+        >Tabs</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/tooltips.html"
+        :class="page === 'tooltips' && '!text-white'"
+        >Tooltips</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/popovers.html"
+        :class="page === 'popovers' && '!text-white'"
+        >Popovers</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/accordion.html"
+        :class="page === 'accordion' && '!text-white'"
+        >Accordion</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/notifications.html"
+        :class="page === 'notifications' && '!text-white'"
+        >Notifications</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/pagination.html"
+        :class="page === 'pagination' && '!text-white'"
+        >Pagination</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/progress.html"
+        :class="page === 'progress' && '!text-white'"
+        >Progress</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/carousel.html"
+        :class="page === 'carousel' && '!text-white'"
+        >Carousel</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/images.html"
+        :class="page === 'images' && '!text-white'"
+        >Images</a
+      >
+    </li>
+    <li>
+      <a
+        class="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+        href="assets/videos.html"
+        :class="page === 'videos' && '!text-white'"
+        >Videos</a
+      >
+    </li>
+  </ul>
+</div>
+<!-- Dropdown Menu End -->
           </li>
           <!-- Menu Item Ui Elements -->
           <!-- Menu Item Auth Pages -->
@@ -783,7 +719,7 @@
 
           <input
             type="text"
-            placeholder="Type to search..."
+            placeholder="Perquisar..."
             class="w-full xl:w-125 bg-transparent pr-4 pl-9 focus:outline-none"
           />
         </div>
@@ -897,13 +833,12 @@
                 >
                   <p class="text-sm">
                     <span class="text-black dark:text-white"
-                      >Edit your information in a swipe</span
+                      >Edite suas informações em um toque</span
                     >
-                    Sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim.
+                    Atualização em andamento.
                   </p>
 
-                  <p class="text-xs">12 May, 2025</p>
+                  <p class="text-xs">12 Maio, 2023</p>
                 </a>
               </li>
               <li>
@@ -913,12 +848,12 @@
                 >
                   <p class="text-sm">
                     <span class="text-black dark:text-white"
-                      >It is a long established fact</span
+                      >É um fato há muito estabelecido</span
                     >
-                    that a reader will be distracted by the readable.
+                    Que um leitor será distraído pelo legível.
                   </p>
 
-                  <p class="text-xs">24 Feb, 2025</p>
+                  <p class="text-xs">24 Fev, 2023</p>
                 </a>
               </li>
               <li>
@@ -928,13 +863,11 @@
                 >
                   <p class="text-sm">
                     <span class="text-black dark:text-white"
-                      >There are many variations</span
+                      >Existem muitas variações</span
                     >
-                    of passages of Lorem Ipsum available, but the majority have
-                    suffered
                   </p>
 
-                  <p class="text-xs">04 Jan, 2025</p>
+                  <p class="text-xs">04 Jan, 2023</p>
                 </a>
               </li>
               <li>
@@ -944,13 +877,11 @@
                 >
                   <p class="text-sm">
                     <span class="text-black dark:text-white"
-                      >There are many variations</span
+                      >Existem muitas variações</span
                     >
-                    of passages of Lorem Ipsum available, but the majority have
-                    suffered
                   </p>
 
-                  <p class="text-xs">01 Dec, 2024</p>
+                  <p class="text-xs">01 Dez, 2023</p>
                 </a>
               </li>
             </ul>
@@ -1027,10 +958,10 @@
 
                   <div>
                     <h6 class="text-sm font-medium text-black dark:text-white">
-                      Mariya Desoja
+                      Maria
                     </h6>
-                    <p class="text-sm">I like your confidence 💪</p>
-                    <p class="text-xs">2min ago</p>
+                    <p class="text-sm">Eu gosto da sua confiança💪</p>
+                    <p class="text-xs">2min atrás</p>
                   </div>
                 </a>
               </li>
@@ -1045,10 +976,10 @@
 
                   <div>
                     <h6 class="text-sm font-medium text-black dark:text-white">
-                      Robert Jhon
+                      Roberto
                     </h6>
-                    <p class="text-sm">Can you share your offer?</p>
-                    <p class="text-xs">10min ago</p>
+                    <p class="text-sm">Você pode compartilhar sua oferta?</p>
+                    <p class="text-xs">10min atrás</p>
                   </div>
                 </a>
               </li>
@@ -1063,10 +994,10 @@
 
                   <div>
                     <h6 class="text-sm font-medium text-black dark:text-white">
-                      Henry Dholi
+                      Henrique Dourado
                     </h6>
                     <p class="text-sm">I cam across your profile and...</p>
-                    <p class="text-xs">1day ago</p>
+                    <p class="text-xs">1 dia atrás</p>
                   </div>
                 </a>
               </li>
@@ -1081,10 +1012,10 @@
 
                   <div>
                     <h6 class="text-sm font-medium text-black dark:text-white">
-                      Cody Fisher
+                      Carlos Fernando
                     </h6>
-                    <p class="text-sm">I’m waiting for you response!</p>
-                    <p class="text-xs">5days ago</p>
+                    <p class="text-sm">aguardo sua resposta!</p>
+                    <p class="text-xs">5 dias atrás</p>
                   </div>
                 </a>
               </li>
@@ -1099,10 +1030,10 @@
 
                   <div>
                     <h6 class="text-sm font-medium text-black dark:text-white">
-                      Mariya Desoja
+                      Maria
                     </h6>
-                    <p class="text-sm">I like your confidence 💪</p>
-                    <p class="text-xs">2min ago</p>
+                    <p class="text-sm">Ontem mesmo</p>
+                    <p class="text-xs">5 dias atrás</p>
                   </div>
                 </a>
               </li>
@@ -1126,9 +1057,9 @@
         >
           <span class="hidden text-right lg:block">
             <span class="block text-sm font-medium text-black dark:text-white"
-              >Thomas Anree</span
+              >Administrador</span
             >
-            <span class="block text-xs font-medium">UX Designer</span>
+            <span class="block text-xs font-medium">Geral</span>
           </span>
 
           <span class="h-12 w-12 rounded-full">
@@ -1183,7 +1114,7 @@
                     fill=""
                   />
                 </svg>
-                My Profile
+                Meu Perfil
               </a>
             </li>
             <li>
@@ -1204,7 +1135,7 @@
                     fill=""
                   />
                 </svg>
-                My Contacts
+                Meu Contato
               </a>
             </li>
             <li>
@@ -1229,7 +1160,7 @@
                     fill=""
                   />
                 </svg>
-                Account Settings
+                Configurações de Conta
               </a>
             </li>
           </ul>
@@ -1253,7 +1184,7 @@
                 fill=""
               />
             </svg>
-            Log Out
+            Sair
           </button>
         </div>
         <!-- Dropdown End -->
@@ -1281,7 +1212,7 @@
               <nav>
                 <ol class="flex items-center gap-2">
                   <li>
-                    <a class="font-medium" href="index.html">Dashboard /</a>
+                    <a class="font-medium" href="index.html">Painel /</a>
                   </li>
                   <li class="font-medium text-primary">Messages</li>
                 </ol>
@@ -1303,7 +1234,7 @@
                     <h3
                       class="text-lg font-medium text-black dark:text-white 2xl:text-xl"
                     >
-                      Active Conversations
+                    Conversa Ativa
                       <span
                         class="rounded-md border-[.5px] border-stroke bg-gray-2 py-0.5 px-2 text-base font-medium text-black dark:border-strokedark dark:bg-boxdark-2 dark:text-white 2xl:ml-4"
                         >7</span
@@ -1315,7 +1246,7 @@
                       <input
                         type="text"
                         class="w-full rounded border border-stroke bg-gray-2 py-2.5 pl-5 pr-10 text-sm outline-none focus:border-primary dark:border-strokedark dark:bg-boxdark-2"
-                        placeholder="Search..."
+                        placeholder="Pesquisa..."
                       />
                       <button class="absolute top-1/2 right-4 -translate-y-1/2">
                         <svg
@@ -1363,10 +1294,10 @@
                           <h5
                             class="text-sm font-medium text-black dark:text-white"
                           >
-                            Henry Dholi
+                          Henrique Dourado
                           </h5>
                           <p class="text-sm font-medium">
-                            I cam across your profile and...
+                            Claro, amanhã estará pronto...
                           </p>
                         </div>
                       </div>
@@ -1390,10 +1321,10 @@
                           <h5
                             class="text-sm font-medium text-black dark:text-white"
                           >
-                            Mariya Desoja
+                          Maria
                           </h5>
                           <p class="text-sm font-medium">
-                            I like your confidence 💪
+                            Eu gosto da sua confiança💪
                           </p>
                         </div>
                       </div>
@@ -1417,10 +1348,10 @@
                           <h5
                             class="text-sm font-medium text-black dark:text-white"
                           >
-                            Robert Jhon
+                          Roberto
                           </h5>
                           <p class="text-sm font-medium">
-                            Can you share your offer?
+                            Você pode compartilhar sua oferta?
                           </p>
                         </div>
                       </div>
@@ -1444,10 +1375,10 @@
                           <h5
                             class="text-sm font-medium text-black dark:text-white"
                           >
-                            Cody Fisher
+                            Mariza Marim
                           </h5>
                           <p class="text-sm font-medium">
-                            I'm waiting for you response!
+                            aguardo sua resposta!
                           </p>
                         </div>
                       </div>
@@ -1471,10 +1402,10 @@
                           <h5
                             class="text-sm font-medium text-black dark:text-white"
                           >
-                            Jenny Wilson
+                            José Wilson
                           </h5>
                           <p class="text-sm font-medium">
-                            I'm waiting for you response!
+                            Está tudo ocorrendo em ordem no departamento 
                           </p>
                         </div>
                       </div>
@@ -1498,9 +1429,9 @@
                           <h5
                             class="text-sm font-medium text-black dark:text-white"
                           >
-                            Marcus Siphron
+                            Marcos Santos
                           </h5>
-                          <p class="text-sm font-medium">Hello, how are you?</p>
+                          <p class="text-sm font-medium">Oi, como vc ta?</p>
                         </div>
                       </div>
                     </div>
@@ -1526,9 +1457,9 @@
                       </div>
                       <div>
                         <h5 class="font-medium text-black dark:text-white">
-                          Henry Dholi
+                          Henrique Dourado
                         </h5>
-                        <p class="text-sm font-medium">Reply to message</p>
+                        <p class="text-sm font-medium">Responder à mensagem</p>
                       </div>
                     </div>
                     <div>
@@ -1624,13 +1555,13 @@
                     class="no-scrollbar max-h-full space-y-3.5 overflow-auto px-6 py-7.5"
                   >
                     <div class="max-w-125">
-                      <p class="mb-2.5 text-sm font-medium">Andri Thomas</p>
+                      <p class="mb-2.5 text-sm font-medium">Administrador</p>
                       <div
                         class="mb-2.5 rounded-2xl rounded-tl-none bg-gray py-3 px-5 dark:bg-boxdark-2"
                       >
                         <p class="font-medium">
-                          I want to make an appointment tomorrow from 2:00 to
-                          5:00pm?
+                          Quero marcar uma consulta amanhã das 14:00 às
+                          17:00?
                         </p>
                       </div>
                       <p class="text-xs font-medium">1:55pm</p>
@@ -1640,18 +1571,17 @@
                         class="mb-2.5 rounded-2xl rounded-br-none bg-primary py-3 px-5"
                       >
                         <p class="font-medium text-white">
-                          Hello, Thomas! I will check the schedule and inform
-                          you
+                          Olá, vou verificar a programação e informá-lo
                         </p>
                       </div>
                       <p class="text-right text-xs font-medium">1:55pm</p>
                     </div>
                     <div class="max-w-125">
-                      <p class="mb-2.5 text-sm font-medium">Andri Thomas</p>
+                      <p class="mb-2.5 text-sm font-medium">Administrador</p>
                       <div
                         class="mb-2.5 rounded-2xl rounded-tl-none bg-gray py-3 px-5 dark:bg-boxdark-2"
                       >
-                        <p class="font-medium">Ok, Thanks for your reply.</p>
+                        <p class="font-medium">Ok obrigado</p>
                       </div>
                       <p class="text-xs font-medium">1:55pm</p>
                     </div>
@@ -1659,18 +1589,17 @@
                       <div
                         class="mb-2.5 rounded-2xl rounded-br-none bg-primary py-3 px-5"
                       >
-                        <p class="font-medium text-white">You are welcome!</p>
+                        <p class="font-medium text-white">De nada!</p>
                       </div>
                       <p class="text-right text-xs font-medium">1:55pm</p>
                     </div>
                     <div class="max-w-125">
-                      <p class="mb-2.5 text-sm font-medium">Andri Thomas</p>
+                      <p class="mb-2.5 text-sm font-medium">Administrador</p>
                       <div
                         class="mb-2.5 rounded-2xl rounded-tl-none bg-gray py-3 px-5 dark:bg-boxdark-2"
                       >
                         <p class="font-medium">
-                          I want to make an appointment tomorrow from 2:00 to
-                          5:00pm?
+                          Bom dia, Pode desmarcar todas as reuniões amanhã motivo pessoal
                         </p>
                       </div>
                       <p class="text-xs font-medium">1:55pm</p>
@@ -1680,8 +1609,7 @@
                         class="mb-2.5 rounded-2xl rounded-br-none bg-primary py-3 px-5"
                       >
                         <p class="font-medium text-white">
-                          Hello, Thomas! I will check the schedule and inform
-                          you
+                          Sem problema ja me adiantei e remarquei para a proxima semana
                         </p>
                       </div>
                       <p class="text-right text-xs font-medium">1:55pm</p>
@@ -1691,7 +1619,7 @@
                       <div
                         class="mb-2.5 rounded-2xl rounded-tl-none bg-gray py-3 px-5 dark:bg-boxdark-2"
                       >
-                        <p class="font-medium">Ok, Thanks for your reply.</p>
+                        <p class="font-medium">Perfeito, muito obrigado!</p>
                       </div>
                       <p class="text-xs font-medium">1:55pm</p>
                     </div>
@@ -1699,7 +1627,7 @@
                       <div
                         class="mb-2.5 rounded-2xl rounded-br-none bg-primary py-3 px-5"
                       >
-                        <p class="font-medium text-white">You are welcome!</p>
+                        <p class="font-medium text-white">De nada</p>
                       </div>
                       <p class="text-right text-xs font-medium">1:55pm</p>
                     </div>
@@ -1711,7 +1639,7 @@
                       <div class="relative w-full">
                         <input
                           type="text"
-                          placeholder="Type something here"
+                          placeholder="Responder"
                           class="h-13 w-full rounded-md border border-stroke bg-gray pl-5 pr-19 font-medium text-black placeholder-body outline-none focus:border-primary dark:border-strokedark dark:bg-boxdark-2 dark:text-white"
                         />
                         <div
