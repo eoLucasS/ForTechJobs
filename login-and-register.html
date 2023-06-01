@@ -3344,28 +3344,28 @@ body {
 </nav>
 <div class="tab-content" id="nav-tabContent">
 <div class="tab-pane fade show active" id="login" role="tabpanel">
-    <form id="login-form" onsubmit="return checkLogin()">
-      <input type="text" name="username" placeholder="CPF ou CNPJ">
-      <input type="password" name="password" placeholder="Senha">
-      <button type="submit" class="prolancer-btn">Login</button>
-    </form>
-    <a href="lost-password.html" class="mt-4 pt-2 d-block lost-password" alt="Lost password">
-      Esqueci minha senha
-    </a>
-  </div>
-  <div class="tab-pane fade" id="register" role="tabpanel">
-   <form id="register-form" onsubmit="return redirectToProfile()">
-      <div class="row">
-        <div class="col-md-6">
-          <input type="text" name="firstname" placeholder="Nome completo">
-        </div>
-        <div class="col-md-6">
-          <input type="text" name="lastname" placeholder="Nascimento">
-        </div>
+  <form id="login-form" onsubmit="return checkLogin()">
+    <input type="text" name="username" placeholder="CPF ou CNPJ">
+    <input type="password" name="password" placeholder="Senha">
+    <button type="submit" class="prolancer-btn">Login</button>
+  </form>
+  <a href="lost-password.html" class="mt-4 pt-2 d-block lost-password" alt="Lost password">
+    Esqueci minha senha
+  </a>
+</div>
+<div class="tab-pane fade" id="register" role="tabpanel">
+  <form id="register-form" onsubmit="return redirectToProfile()">
+    <div class="row">
+      <div class="col-md-6">
+        <input type="text" name="firstname" placeholder="Nome completo">
       </div>
-      <input type="text" name="username" placeholder="CPF ou CNPJ">
-      <input type="email" name="email" placeholder="Senha">
-      <button type="submit" class="prolancer-btn">Registrar</button>
+      <div class="col-md-6">
+        <input type="text" name="lastname" placeholder="Nascimento">
+      </div>
+    </div>
+    <input type="text" name="username" placeholder="CPF ou CNPJ">
+    <input type="password" name="password" placeholder="Senha">
+    <button type="submit" class="prolancer-btn">Registrar</button>
     </form>
   </div>
   <script>
