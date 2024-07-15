@@ -1,5 +1,5 @@
 <h1 align="center">
-  ForTech Jobs <img width="25px" src="https://cdn.discordapp.com/attachments/1049167666876776458/1049167722082226186/icon.png"/>
+  ForTech <img width="25px" src="https://raw.githubusercontent.com/eoLucasS/portfolio/main/assets/img/icon.svg"/>
 </h1>
 
  <p align="center">
@@ -8,7 +8,9 @@
 
 <br>
 
-![Resultado final do projeto](https://cdn.discordapp.com/attachments/1101247504818917476/1101269350654165002/image.png)
+<p align="center">
+  <img src="assets\src\images/preview.png" width="650" height="338">
+</p>
 
 <br>
 
@@ -29,12 +31,12 @@ Esse projeto foi desenvolvido com as seguintes Linguagens:
   <a href="https://github.com/eoLucasS" target="_blank"><img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" target="_blank"></a>
   <a href="https://github.com/eoLucasS" target="_blank"><img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" target="_blank"></a>
 
-## 📚 Bibliotecas
+## 📚 Bibliotecas e Ferramentas
 
-- [Google Fonts](https://fonts.google.com/)
-- [React Icons](https://react-icons.github.io/react-icons/)
-- [Phosphor Icons](https://phosphoricons.com/)
-- [Form Submit](https://formsubmit.co/)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Python](https://www.python.org/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 
 ## 🔗 Links
@@ -55,20 +57,27 @@ Esse projeto foi desenvolvido com as seguintes Linguagens:
 
  </p>
  
-## 💻 Autor<br>
+## 💻 Colaboradores<br>
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/eoLucasS">
-        <img src="https://cdn.discordapp.com/attachments/1049167666876776458/1049179325410312292/tdi.png" width="100px;" /><br>
+      <a href="https://www.linkedin.com/in/lucaslopesdasilva/">
+        <img src="https://avatars.githubusercontent.com/u/119815116?v=4" width="100px;" /><br>
         <sub>
-          <b>Lucas Lopes</b>
+          <b>Lucas Silva</b>
         </sub>
       </a>
     </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/nycolasagrgarcia/">
+        <img src="https://media.licdn.com/dms/image/C4E03AQHp2s4N73dbEA/profile-displayphoto-shrink_800_800/0/1658261108787?e=1725494400&v=beta&t=bY2v_s927nkomKEakSU8sGp6wDB0Wq94gBu9eHG-7Vw" width="100px;" /><br>
+        <sub>
+          <b>Nycolas Garcia</b>
+        </sub>
+      </a>
   </tr>
 </table>
 
 -----
 
-  <h3 align="center"> Developed by <a href="https://www.linkedin.com/in/lucaslopesdasilva/">Lucas Lopes</a> ☕</h3>
+<h3 align="center"> Desenvolvido por <a href="https://www.linkedin.com/in/lucaslopesdasilva/">Lucas Lopes da Silva</a> ☕</h3>
